@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-powered patient engagement, scheduling, and digital solutions for Cornerstone Chiropractic Center by FooLiSHNeSS eNVy." />
+  <title>AI Solutions for Cornerstone Chiropractic | FooLiSHNeSS eNVy</title>
+  <link rel="stylesheet" href="../shared/styles.css" />
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --primary-light: #a78bfa;
+      --primary-dark: #6d28d9;
+      --primary-glow: rgba(124, 58, 237, 0.4);
+    }
+    .envy-brand .foolishness { font-weight:400; letter-spacing:1px; }
+    .envy-brand .envy { font-weight:800; background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+    .problem-card { background:rgba(239,68,68,0.06); border:1px solid rgba(239,68,68,0.15); border-radius:var(--radius-lg); padding:var(--space-xl); }
+    .problem-card h4 { color:#f87171; }
+    .solution-card { background:rgba(6,214,160,0.06); border:1px solid rgba(6,214,160,0.15); border-radius:var(--radius-lg); padding:var(--space-xl); }
+    .solution-card h4 { color:var(--accent); }
+    .roi-card { background:linear-gradient(135deg,rgba(6,214,160,0.08),rgba(124,58,237,0.05)); border:1px solid rgba(6,214,160,0.2); border-radius:var(--radius-xl); padding:var(--space-2xl); text-align:center; }
+    .roi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:var(--space-lg); margin-top:var(--space-xl); }
+    .roi-item .number { font-family:var(--font-heading); font-size:2rem; font-weight:800; color:var(--accent); }
+    .roi-item .label { font-size:0.85rem; color:var(--text-muted); margin-top:var(--space-xs); }
+    .process-timeline { position:relative; padding-left:40px; }
+    .process-timeline::before { content:''; position:absolute; left:15px; top:0; bottom:0; width:2px; background:var(--border); }
+    .timeline-step { position:relative; margin-bottom:var(--space-2xl); }
+    .timeline-step::before { content:attr(data-step); position:absolute; left:-40px; width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--accent)); color:white; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:700; line-height:30px; text-align:center; }
+    .timeline-step h4 { margin-bottom:var(--space-xs); }
+    .timeline-step p { color:var(--text-secondary); font-size:0.9rem; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="#top" class="nav-brand">
+      <span class="brand-icon" style="background:linear-gradient(135deg,#7c3aed,#06d6a0)">⚡</span>
+      <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">← View Demo Site</a></li>
+      <li><a href="#problem">The Opportunity</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact-us" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Custom Proposal for Cornerstone Chiropractic Center
+      </div>
+      <h1>274 Happy Patients. <span class="gradient-text">Imagine What AI Could Add.</span></h1>
+      <p class="subtitle">Dr. Adam and Dr. Dennis — you've built something incredible over 20+ years. With 4.9 stars and hundreds of loyal patients, the foundation is rock solid. Now let's amplify your reach with an AI assistant that works as hard as McKensie and April — but never takes a day off.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg">View Pricing 💰</a>
+        <a href="index.html" class="btn btn-secondary btn-lg">See Your AI Demo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">The Opportunity</span>
+      <h2>Where AI <span class="gradient-text">Fills the Gaps</span></h2>
+      <p class="subtitle">Your team is incredible. But there are hours when the office is closed, and patients still have questions.</p>
+    </div>
+    <div class="grid grid-2 animate-in">
+      <div class="problem-card">
+        <h4>⏰ The Gap</h4>
+        <ul style="margin-top:var(--space-md);color:var(--text-secondary);font-size:0.9rem;list-style:none;display:flex;flex-direction:column;gap:var(--space-sm)">
+          <li>• Closed during midday — missed calls and new patients</li>
+          <li>• Closed Fri–Sun — weekend inquiries go unanswered</li>
+          <li>• McKensie can only handle one call at a time</li>
+          <li>• Car accident patients need immediate answers</li>
+          <li>• New patients don't know about pediatric or pregnancy care</li>
+          <li>• Insurance questions take staff time mid-appointment</li>
+        </ul>
+      </div>
+      <div class="solution-card">
+        <h4>✅ With AI</h4>
+        <ul style="margin-top:var(--space-md);color:var(--text-secondary);font-size:0.9rem;list-style:none;display:flex;flex-direction:column;gap:var(--space-sm)">
+          <li>• AI answers during midday breaks and after hours</li>
+          <li>• Weekend inquiries captured and queued for Monday</li>
+          <li>• AI handles unlimited simultaneous conversations</li>
+          <li>• Accident patients get immediate guidance + schedule</li>
+          <li>• AI promotes full range of services automatically</li>
+          <li>• Insurance FAQ handled without interrupting staff</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(124,58,237,0.04),transparent)">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">Who We Are</span>
+        <h2>Meet <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span></h2>
+        <p class="subtitle" style="margin-bottom:var(--space-xl)">Murray-based. AI-focused. We build technology that feels like a natural extension of your team — not a replacement.</p>
+        <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:var(--space-xl)">That demo chatbot? It already knows Dr. Adam's specialties, Dr. Dennis's 20-year legacy, April's role in intake, your Thompson and Activator techniques, your hours (including those midday breaks), and even references J. Dudley's allergy testimonial. <strong>That's how we work.</strong></p>
+        <div style="display:flex;flex-direction:column;gap:var(--space-sm)">
+          <div class="contact-info-card"><div class="icon">👤</div><div><h4>Nathan Michel & eNVy</h4><p>Founder & AI Architect</p></div></div>
+          <div class="contact-info-card"><div class="icon">📧</div><div><h4>iamaienvy@gmail.com</h4><p><a href="mailto:iamaienvy@gmail.com">Email us</a></p></div></div>
+          <div class="contact-info-card"><div class="icon">📞</div><div><h4>(270) 709-0697</h4><p><a href="tel:2707090697">Call or text</a></p></div></div>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="roi-card">
+          <h3 style="margin-bottom:var(--space-sm)">Projected Impact</h3>
+          <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:var(--space-lg)">Based on similar chiropractic AI deployments</p>
+          <div class="roi-grid">
+            <div class="roi-item"><div class="number" data-count="45" data-suffix="%">0%</div><div class="label">More Bookings</div></div>
+            <div class="roi-item"><div class="number" data-count="70" data-suffix="%">0%</div><div class="label">After-Hours Capture</div></div>
+            <div class="roi-item"><div class="number" data-count="55" data-suffix="%">0%</div><div class="label">Fewer Admin Calls</div></div>
+            <div class="roi-item"><div class="number" data-count="20" data-suffix="hrs">0hrs</div><div class="label">Staff Time Saved / Month</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="solutions">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">What We Build</span>
+      <h2>AI Solutions <span class="gradient-text">For Cornerstone</span></h2>
+    </div>
+    <div class="grid grid-2 animate-in">
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>AI Patient Assistant</h3>
+        <p>24/7 chatbot on your site that handles service questions, hours, emergency visit booking, new patient intake info, insurance FAQ, and team introductions — even during midday closures and weekends.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>SMS Pain Triage</h3>
+        <p>Patients text their symptoms, and AI provides immediate guidance ("That sounds like it could be sciatica — let me schedule you for a same-day visit") and routes them to the right appointment type.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Patient Analytics</h3>
+        <p>Track chat volume, top questions, peak inquiry times, and new patient conversion. See exactly where AI is saving your team time and bringing in new faces.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔄</div>
+        <h3>Smart Follow-Up</h3>
+        <p>Automated post-visit check-ins, treatment milestone celebrations, and re-engagement texts for patients who haven't visited in a while. Keep your 274 reviews growing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Investment</span>
+      <h2>Simple, Transparent <span class="gradient-text">Pricing</span></h2>
+    </div>
+
+    <div class="setup-card animate-in">
+      <span class="section-label" style="margin-bottom:var(--space-md)">One-Time Setup Fee</span>
+      <div style="font-family:var(--font-heading);font-size:2.8rem;font-weight:800;background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">$4,500</div>
+      <p style="color:var(--text-secondary);margin-top:var(--space-sm);font-size:0.95rem">AI chatbot + SMS triage system + patient analytics + smart follow-up + site integration + deployment</p>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">50% deposit ($2,250) to start. Balance due at launch. Built in 2–3 weeks.</p>
+    </div>
+
+    <div class="pricing-grid animate-in">
+      <div class="pricing-card">
+        <div class="tier-name">Starter</div>
+        <div class="tier-desc">Core AI patient assistant</div>
+        <div class="price">$149<span>/mo</span></div>
+        <ul class="features-list">
+          <li>AI chatbot on your site</li>
+          <li>Service & hours auto-responses</li>
+          <li>New patient info capture</li>
+          <li>Hosting & SSL</li>
+          <li>Email support (48hr)</li>
+          <li>Monthly performance report</li>
+        </ul>
+        <a href="#contact-us" class="btn btn-secondary">Get Started</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="tier-name">Growth</div>
+        <div class="tier-desc">Full AI + SMS automation</div>
+        <div class="price">$299<span>/mo</span></div>
+        <ul class="features-list">
+          <li>Everything in Starter</li>
+          <li>SMS pain triage & routing</li>
+          <li>Appointment reminders</li>
+          <li>Post-visit follow-up texts</li>
+          <li>Patient analytics dashboard</li>
+          <li>Re-engagement campaigns</li>
+          <li>Priority support (24hr)</li>
+          <li>Quarterly strategy call</li>
+        </ul>
+        <a href="#contact-us" class="btn btn-primary">Best Value →</a>
+      </div>
+      <div class="pricing-card">
+        <div class="tier-name">Enterprise</div>
+        <div class="tier-desc">Full-service AI partner</div>
+        <div class="price">$499<span>/mo</span></div>
+        <ul class="features-list">
+          <li>Everything in Growth</li>
+          <li>AI voice assistant for phone</li>
+          <li>Smart scheduling integration</li>
+          <li>Custom patient portal</li>
+          <li>Dedicated account manager</li>
+          <li>Social media AI content</li>
+          <li>Same-day support</li>
+          <li>Monthly strategy sessions</li>
+        </ul>
+        <a href="#contact-us" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-2xl)" class="animate-in"><p style="color:var(--text-muted);font-size:0.85rem">Month-to-month. No contracts. Cancel anytime.</p></div>
+  </div>
+</section>
+
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(6,214,160,0.04),transparent)">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">How It Works</span>
+        <h2>From Handshake to <span class="gradient-text">Launch</span></h2>
+        <div class="process-timeline" style="margin-top:var(--space-2xl)">
+          <div class="timeline-step" data-step="1"><h4>Discovery Call</h4><p>30 min — we demo the AI, discuss your workflow, and identify the highest-impact integration points.</p></div>
+          <div class="timeline-step" data-step="2"><h4>Design & Approval</h4><p>We map out the chatbot flows, SMS templates, and analytics dashboard. You approve everything.</p></div>
+          <div class="timeline-step" data-step="3"><h4>Build & Test</h4><p>We build, integrate with your existing site, train the AI on your specific services, and test every flow thoroughly.</p></div>
+          <div class="timeline-step" data-step="4"><h4>Launch & Train</h4><p>Go live. We walk Lauren, McKensie, and April through the dashboard so your whole team is confident.</p></div>
+          <div class="timeline-step" data-step="5"><h4>Ongoing Partnership</h4><p>Monthly reports, continuous AI refinement, and a partner who picks up the phone.</p></div>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="card" style="padding:var(--space-3xl)">
+          <h3 style="margin-bottom:var(--space-xl)">Why Cornerstone Should Choose Us</h3>
+          <div style="display:flex;flex-direction:column;gap:var(--space-xl)">
+            <div><h4>🏠 Murray Local</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Same community. Same values. We know Murray because we ARE Murray.</p></div>
+            <div><h4>🧠 AI That Knows Your Practice</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">The demo chatbot already knows Thompson Technique, Dr. Adam's pediatric specialty, April's intake process, and your midday break schedule. No generic bots.</p></div>
+            <div><h4>👨‍👩‍👧‍👦 Built for Your Team</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">We name your staff in the training process. We respect your culture. The AI becomes an extension of your family practice — not a replacement.</p></div>
+            <div><h4>💰 Real ROI</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">$4,500 setup + $299/mo is less than a part-time employee, and this system works 24/7 including weekends and midday breaks when you're closed.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact-us">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Let's Talk</span>
+      <h2>Ready to <span class="gradient-text">Level Up?</span></h2>
+      <p class="subtitle">Free 30-minute discovery call. We'll demo the AI live and go from there.</p>
+    </div>
+    <div class="animate-in" style="max-width:600px;margin:0 auto">
+      <div style="display:flex;flex-direction:column;gap:var(--space-md)">
+        <div class="contact-info-card"><div class="icon">👤</div><div><h4>Nathan Michel</h4><p class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></p></div></div>
+        <div class="contact-info-card"><div class="icon">📧</div><div><h4>Email</h4><p><a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a></p></div></div>
+        <div class="contact-info-card"><div class="icon">📞</div><div><h4>Call or Text</h4><p><a href="tel:2707090697">(270) 709-0697</a></p></div></div>
+      </div>
+      <div style="text-align:center;margin-top:var(--space-2xl)">
+        <a href="mailto:iamaienvy@gmail.com?subject=Cornerstone%20Chiropractic%20-%20AI%20Solutions&body=Hi%20Nathan,%0A%0AWe're%20interested%20in%20AI%20solutions%20for%20Cornerstone%20Chiropractic%20Center.%0A%0ABest%20time%20to%20chat:%20%0A%0AThanks!" class="btn btn-primary btn-lg">📧 Start the Conversation</a>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">Or call/text: (270) 709-0697</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding-top:0">
+      <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span>
+      <span>&copy; 2026 FooLiSHNeSS eNVy · Murray, KY</span>
+      <span><a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a> · <a href="tel:2707090697">(270) 709-0697</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../shared/animations.js"></script>
+</body>
+</html>

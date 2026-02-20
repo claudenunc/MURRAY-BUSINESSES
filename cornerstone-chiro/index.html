@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cornerstone Chiropractic Center — Dr. Adam Heskett & Dr. Dennis Heskett. Family chiropractic care in Murray, KY for 20+ years. Pediatric, pregnancy, chronic pain, accident & injury care. 4.9 stars, 274 reviews." />
+  <title>Cornerstone Chiropractic Center | Dr. Adam & Dr. Dennis Heskett | Murray, KY</title>
+  <link rel="stylesheet" href="../shared/styles.css" />
+  <style>
+    :root {
+      --primary: #7c3aed;
+      --primary-light: #a78bfa;
+      --primary-dark: #6d28d9;
+      --primary-glow: rgba(124, 58, 237, 0.4);
+      --accent: #06d6a0;
+      --accent-dark: #059669;
+    }
+    .team-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-2xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .team-card .role { color: var(--primary-light); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .team-card .name { font-family: var(--font-heading); font-size: 1.2rem; font-weight: 700; margin-top: var(--space-xs); }
+    .team-card .bio { color: var(--text-secondary); font-size: 0.85rem; margin-top: var(--space-sm); }
+    .team-avatar { width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--accent)); display:flex; align-items:center; justify-content:center; font-size:1.8rem; margin:0 auto var(--space-md); }
+    .review-highlight { background:linear-gradient(135deg,rgba(124,58,237,0.06),rgba(6,214,160,0.04)); border:1px solid rgba(124,58,237,0.15); border-radius:var(--radius-xl); padding:var(--space-2xl); }
+    .review-highlight blockquote { font-style:italic; color:var(--text-primary); font-size:1rem; line-height:1.6; margin:0 0 var(--space-md); }
+    .review-highlight .attribution { color:var(--text-muted); font-size:0.85rem; font-weight:600; }
+    .condition-chip {
+      display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--bg-glass); border: 1px solid var(--border);
+      border-radius: var(--radius-full); font-size: 0.8rem; color: var(--text-secondary); transition: all var(--transition-fast);
+    }
+    .condition-chip:hover { border-color: var(--primary-light); color: var(--primary-light); }
+    .technique-badge {
+      display: inline-flex; padding: 6px 14px; background:rgba(124,58,237,0.1); border:1px solid rgba(124,58,237,0.2);
+      border-radius: var(--radius-full); font-size: 0.8rem; color: var(--primary-light); font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="nav-brand">
+      <span class="brand-icon" style="background:linear-gradient(135deg,var(--primary),var(--accent))">🏛️</span>
+      Cornerstone Chiropractic
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#ai-chat">AI Assistant</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="services.html" class="nav-cta">AI Solutions</a></li>
+    </ul>
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- ══════ Hero ══════ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Dr. Adam Heskett & Dr. Dennis Heskett · 20+ Years Serving Murray
+      </div>
+      <h1>Wellness Through <br><span class="gradient-text">Corrective Care</span></h1>
+      <p class="subtitle">The chiropractic care we provide gives you the relief and stability you're looking for — and addresses the underlying cause, not just symptoms. From newborns to seniors, accidents to chronic pain, the Hesketts have Murray covered.</p>
+      <div class="hero-actions">
+        <a href="#ai-chat" class="btn btn-primary btn-lg">Chat With Our AI Assistant 🤖</a>
+        <a href="tel:2707591116" class="btn btn-secondary btn-lg">📞 (270) 759-1116</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-number"><span style="color:#fbbf24">★</span> 4.9</div>
+          <div class="stat-label">274+ Reviews</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Years in Murray</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number">Same Day</div>
+          <div class="stat-label">Emergency Visits</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Why Choose ══════ -->
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(124,58,237,0.03),transparent)">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">The Cornerstone Difference</span>
+      <h2>Why Choose <span class="gradient-text">Cornerstone?</span></h2>
+    </div>
+    <div class="grid grid-3 animate-in">
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark))">👨‍⚕️</div>
+        <h3>Professional Staff</h3>
+        <p>Our doctors and staff take an individual, systematic approach to treat the whole person — not just the painful symptoms. Every patient receives personalized care.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-dark))">💰</div>
+        <h3>Affordable Prices</h3>
+        <p>We believe chiropractic care should be available to everyone. We work with patients to ensure your investment is well worth it — quality care at fair prices.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--primary),var(--accent))">🏥</div>
+        <h3>Insurance Partners</h3>
+        <p>We file insurance on your behalf and work with most providers. We'll help you find out if your care is covered so you can get the treatment you need stress-free.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Services ══════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Our Services</span>
+      <h2>Comprehensive <span class="gradient-text">Chiropractic Care</span></h2>
+      <p class="subtitle">We customize each session to your current state of pain. Our goal is to relieve your discomfort, expand your mobility, and prevent impending aches.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card animate-in delay-1">
+        <div class="card-icon">🦴</div>
+        <h3>Chiropractic Adjustments</h3>
+        <p>Hands-on spinal alignment for patients of all ages — from newborns to the elderly. We use a dynamic mix of high-velocity adjustments and gentle, low-force mobilizations tailored to your comfort.</p>
+      </div>
+      <div class="card animate-in delay-2">
+        <div class="card-icon">😫</div>
+        <h3>Chronic Pain Therapy</h3>
+        <p>We evaluate your condition, locate the source of your pain, and develop an individualized treatment plan combining targeted adjustments, corrective exercises, and lifestyle guidance for lasting relief.</p>
+      </div>
+      <div class="card animate-in delay-3">
+        <div class="card-icon">👶</div>
+        <h3>Pediatric Chiropractic</h3>
+        <p>Gentle adjustments designed specifically for the unique needs of children, babies, and newborns. Kids respond quickly to our care, and Dr. Adam specializes in pediatric adjusting.</p>
+      </div>
+      <div class="card animate-in delay-1">
+        <div class="card-icon">🤰</div>
+        <h3>Pregnancy Care</h3>
+        <p>Outstanding relief for back pain and pregnancy-related symptoms. Safe, effective, personalized care throughout your pregnancy and postpartum. Many women report easier birthing after chiropractic treatment.</p>
+      </div>
+      <div class="card animate-in delay-2">
+        <div class="card-icon">🚗</div>
+        <h3>Accident & Injury Care</h3>
+        <p>Specialized care for car accidents, work injuries, or other incidents. We address the damage from impact, restore function, and support your full recovery with a comprehensive plan.</p>
+      </div>
+      <div class="card animate-in delay-3">
+        <div class="card-icon">📊</div>
+        <h3>Digital X-Ray & Radiology</h3>
+        <p>Our doctors are certified in chiropractic radiology and utilize digital x-ray imaging to precisely diagnose your condition and track your progress throughout treatment.</p>
+      </div>
+    </div>
+
+    <!-- Techniques & Conditions -->
+    <div style="text-align:center;margin-top:var(--space-3xl)" class="animate-in">
+      <h3 style="margin-bottom:var(--space-lg)">Specialized Techniques</h3>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-sm);margin-bottom:var(--space-2xl)">
+        <span class="technique-badge">Thompson Technique</span>
+        <span class="technique-badge">Full Spine Technique</span>
+        <span class="technique-badge">Activator</span>
+        <span class="technique-badge">Pediatric Adjusting</span>
+        <span class="technique-badge">Instrument-Assisted</span>
+      </div>
+      <h3 style="margin-bottom:var(--space-lg)">Conditions We Treat</h3>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-sm)">
+        <span class="condition-chip">🔙 Back Pain</span>
+        <span class="condition-chip">🦒 Neck Pain</span>
+        <span class="condition-chip">🤕 Headaches</span>
+        <span class="condition-chip">⚡ Sciatica</span>
+        <span class="condition-chip">💪 Shoulder Pain</span>
+        <span class="condition-chip">🦵 Knee Pain</span>
+        <span class="condition-chip">🦶 Ankle Injuries</span>
+        <span class="condition-chip">✋ Wrist Pain</span>
+        <span class="condition-chip">🤧 Allergies</span>
+        <span class="condition-chip">😫 Fibromyalgia</span>
+        <span class="condition-chip">🦴 Arthritis</span>
+        <span class="condition-chip">🚗 Auto Accidents</span>
+        <span class="condition-chip">🤰 Pregnancy Pain</span>
+        <span class="condition-chip">🏋️ Sports Injuries</span>
+        <span class="condition-chip">⚠️ Work Injuries</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Our Team ══════ -->
+<section class="section" id="team" style="background:linear-gradient(180deg,transparent,rgba(6,214,160,0.03),transparent)">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Meet the Team</span>
+      <h2>The People Who <span class="gradient-text">Take Care of You</span></h2>
+      <p class="subtitle">A family-run practice with 20+ years of dedication to Murray. From the doctors to the front desk, everyone here is committed to your health.</p>
+    </div>
+    <div class="grid grid-2" style="max-width:800px;margin:0 auto;gap:var(--space-xl)">
+      <div class="team-card animate-in delay-1">
+        <div class="team-avatar">👨‍⚕️</div>
+        <div class="role">Chiropractor</div>
+        <div class="name">Dr. Adam Heskett</div>
+        <div class="bio">Doctor of Chiropractic from Life University, Atlanta. BS from Murray State University. Specializes in Pediatric Adjusting, Full Spine, Thompson Technique, and Activator. Proud to continue the family legacy.</div>
+      </div>
+      <div class="team-card animate-in delay-2">
+        <div class="team-avatar">👨‍⚕️</div>
+        <div class="role">Chiropractor</div>
+        <div class="name">Dr. Dennis Heskett</div>
+        <div class="bio">20+ years serving Murray. Doctor of Chiropractic from Life University. A respected mentor whose passion for chiropractic has fueled a legacy — two of his children are now chiropractors themselves.</div>
+      </div>
+    </div>
+    <div class="grid grid-3" style="margin-top:var(--space-xl)">
+      <div class="team-card animate-in delay-1">
+        <div class="team-avatar" style="font-size:1.4rem">💼</div>
+        <div class="role">Office Manager</div>
+        <div class="name">Lauren Heskett</div>
+        <div class="bio">BA in Psychology with a background in behavior therapy. Problem-solver extraordinaire who loves building relationships with patients.</div>
+      </div>
+      <div class="team-card animate-in delay-2">
+        <div class="team-avatar" style="font-size:1.4rem">📋</div>
+        <div class="role">Chiropractic Specialist</div>
+        <div class="name">McKensie</div>
+        <div class="bio">The first and last person you'll see. Coordinates schedules, keeps the office running smooth, and always greets you with a smile.</div>
+      </div>
+      <div class="team-card animate-in delay-3">
+        <div class="team-avatar" style="font-size:1.4rem">🩺</div>
+        <div class="role">Chiro Assistant & Exam Specialist</div>
+        <div class="name">April</div>
+        <div class="bio">18 years of experience with orthopedic surgeons. Goes over your health history thoroughly so you feel heard and your symptoms are communicated to our doctors.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Testimonials ══════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Patient Stories</span>
+      <h2><span style="color:#fbbf24">★</span> 4.9 Stars · <span class="gradient-text">274+ Reviews</span></h2>
+    </div>
+    <div class="grid grid-2 animate-in" style="max-width:900px;margin:0 auto">
+      <div class="review-highlight">
+        <div class="stars" style="margin-bottom:var(--space-md)">★★★★★</div>
+        <blockquote>"I had allergies every morning, and had never seen a chiropractor. Two adjustments later my allergies were gone. I also find that I am more balanced and it has improved my performance as an athlete. Cornerstone Chiropractic has greatly improved the quality of my life."</blockquote>
+        <div class="attribution">— J. Dudley</div>
+      </div>
+      <div class="review-highlight">
+        <div class="stars" style="margin-bottom:var(--space-md)">★★★★★</div>
+        <blockquote>"I'm always working in peculiar positions: carrying heavy tool cases up and down stairs, moving safes and doors, and always stressing my back. BUT every time, Dr. Heskett is the most efficient chiropractor I have ever been to. I highly recommend chiropractic care and most of all Dr. Heskett."</blockquote>
+        <div class="attribution">— S. Jones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ AI Chat Demo ══════ -->
+<section class="section ai-demo-section" id="ai-chat">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Try It Live</span>
+      <h2>Your AI <span class="gradient-text">Patient Assistant</span></h2>
+      <p class="subtitle">Imagine patients getting instant answers about your services, hours, team, emergency visits, and insurance — 24/7, even while you're adjusting patients.</p>
+    </div>
+    <div class="ai-demo-container animate-in" id="cornerstone-chat-embed"></div>
+    <div style="text-align:center;margin-top:var(--space-xl)" class="animate-in">
+      <p style="color:var(--text-muted);font-size:0.85rem">Try: "My neck hurts" · "Do you take insurance?" · "I was in a car accident" · "Do you see kids?"</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Contact ══════ -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Visit Us</span>
+      <h2>Cornerstone <span class="gradient-text">Chiropractic Center</span></h2>
+      <p class="subtitle">Proudly serving the Murray community for over 20 years.</p>
+    </div>
+    <div class="contact-grid animate-in">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-md)">
+          <div class="contact-info-card">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>1703 KY Highway 121 N Bypass<br>Murray, KY 42071</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:2707591116">(270) 759-1116</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:cornerstonechirocenter@gmail.com">cornerstonechirocenter@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <table class="hours-table">
+                <tr><td>Monday</td><td>8:00 AM – 11:00 AM, 2:00 – 5:30 PM</td></tr>
+                <tr><td>Tuesday</td><td>9:30 AM – 11:30 AM, 3:30 – 5:30 PM</td></tr>
+                <tr><td>Wednesday</td><td>8:00 AM – 11:00 AM, 2:00 – 5:30 PM</td></tr>
+                <tr><td>Thursday</td><td>9:30 AM – 11:30 AM, 3:30 – 5:30 PM</td></tr>
+                <tr><td>Friday – Sunday</td><td>Closed</td></tr>
+              </table>
+              <p style="color:var(--text-muted);font-size:0.8rem;margin-top:var(--space-xs)">Same-day emergency visits available</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">⚡</div>
+            <div>
+              <h4>Same-Day Emergencies</h4>
+              <p>Experiencing acute pain? Call us for a same-day emergency visit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138!2d-88.33!3d36.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM3JzIxLjAiTiA4OMKwMTknNDguMCJX!5e0!3m2!1sen!2sus!4v1" loading="lazy" title="Cornerstone Chiropractic Center — 1703 KY-121 Bypass, Murray, KY"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand" style="margin-bottom:var(--space-sm)">
+          <span class="brand-icon" style="background:linear-gradient(135deg,var(--primary),var(--accent))">🏛️</span>
+          Cornerstone Chiropractic
+        </div>
+        <p>Dr. Adam & Dr. Dennis Heskett — 20+ years of corrective chiropractic care for the Murray, Kentucky community.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#ai-chat">AI Assistant</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Adjustments</a></li>
+          <li><a href="#services">Chronic Pain</a></li>
+          <li><a href="#services">Pediatric</a></li>
+          <li><a href="#services">Pregnancy</a></li>
+          <li><a href="#services">Accident Care</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:2707591116">(270) 759-1116</a></li>
+          <li><a href="mailto:cornerstonechirocenter@gmail.com">Email Us</a></li>
+          <li><a href="#contact">Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Cornerstone Chiropractic Center · 1703 KY-121 Bypass, Murray, KY</span>
+      <span>AI Demo by <a href="services.html">FooLiSHNeSS eNVy</a> · <a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../shared/animations.js"></script>
+<script src="../shared/chatbot.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    new AIChatbot({
+      containerId: 'cornerstone-chat-embed',
+      isFloating: false,
+      name: "Cornerstone AI Assistant",
+      avatar: '🏛️',
+      greeting: "Welcome to Cornerstone Chiropractic Center! 👋 I can help you learn about our services, meet our team, check hours, or schedule a visit with Dr. Adam or Dr. Dennis Heskett. How can I help?",
+      responses: {
+        'book|appointment|schedule|visit|come in':
+          "You can schedule an appointment by calling us at (270) 759-1116 or emailing cornerstonechirocenter@gmail.com. We also offer same-day emergency visits for acute pain! Would you like our hours? 📅",
+        'hours|open|close|when':
+          "Our hours:\n• Mon & Wed: 8 AM – 11 AM, 2 – 5:30 PM\n• Tue & Thu: 9:30 – 11:30 AM, 3:30 – 5:30 PM\n• Fri – Sun: Closed\nWe're closed during the midday break. Same-day emergency visits are available! 🕐",
+        'emergency|urgent|acute|same day|same-day|right now':
+          "Yes! We offer same-day emergency visits for acute pain. Call us right away at (270) 759-1116 and we'll get you in as soon as possible. Don't suffer through it! ⚡",
+        'pain|hurt|back|neck|shoulder|headache|sciatica|knee|ankle|wrist|ache':
+          "I'm sorry you're in pain. 😔 At Cornerstone, we don't just treat symptoms — we evaluate your condition, locate the source, and develop an individualized plan combining adjustments, corrective exercises, and lifestyle guidance. Dr. Adam and Dr. Dennis have been doing this for over 20 years. Want to schedule a visit?",
+        'child|kid|baby|newborn|infant|pediatric|children|toddler':
+          "Absolutely! Pediatric chiropractic is one of Dr. Adam's specialties. Our adjustments for kids are gentle and designed specifically for their unique needs. Children, babies, and even newborns respond quickly to our care. 👶",
+        'pregnant|pregnancy|prenatal|expecting|baby|postpartum':
+          "Chiropractic care during pregnancy is an outstanding source of relief! We provide safe, personalized care throughout your pregnancy and postpartum. Many women report easier birthing after treatment. Our doctors use gentle techniques with pregnancy-safe positioning. 🤰",
+        'accident|car|work injury|wreck|crash|incident':
+          "We specialize in accident and injury care. Whether it's a car accident, work injury, or other incident, we address the damage from impact, restore function, and support full recovery. Call (270) 759-1116 to get seen quickly — we offer same-day emergency visits. 🚗",
+        'xray|x-ray|radiology|imaging|digital':
+          "Yes! Our doctors are certified in chiropractic radiology and we utilize digital x-ray imaging. This helps us precisely diagnose your condition and track your progress throughout treatment. 📊",
+        'insurance|cost|price|pay|coverage|afford|file':
+          "We file insurance on your behalf and work with most providers. We'll help you find out if your care is covered so you can get treatment stress-free. We also believe in affordable pricing — we work with every patient to ensure the investment is worth it. 💰",
+        'technique|thompson|activator|method|how|type':
+          "Dr. Adam's specialties include:\n• Full Spine Technique\n• Thompson Technique\n• Activator (instrument-assisted)\n• Pediatric Adjusting\nWe tailor the technique to your comfort — both high-velocity and gentle low-force options available.",
+        'adam|dr adam|dr. adam':
+          "Dr. Adam Heskett received his Doctor of Chiropractic from Life University in Atlanta, GA, and his BS from Murray State University. He specializes in Pediatric Adjusting, Full Spine, Thompson Technique, and Activator. He's proud to continue the family legacy alongside his father! 🩺",
+        'dennis|dr dennis|dr. dennis|senior|father':
+          "Dr. Dennis Heskett has served Murray for over 20 years! He also graduated from Life University and is a well-respected mentor in the field. His passion created a legacy — two of his children are now chiropractors themselves. 🎓",
+        'team|staff|who works|people':
+          "Our amazing team:\n• Dr. Adam Heskett — Chiropractor\n• Dr. Dennis Heskett — Chiropractor (20+ years)\n• Lauren Heskett — Office Manager (BA Psychology)\n• McKensie — Chiropractic Specialist\n• April — Exam Specialist (18 years orthopedic experience)\nThat's the Cornerstone family! 👨‍👩‍👧‍👦",
+        'allerg|immune|wellness|overall':
+          "Fun fact — chiropractic adjustments can help with allergies and immune function too! One of our patients, J. Dudley, said: 'Two adjustments later my allergies were gone.' Adjustments improve brain-body communication, supporting overall wellness. 🤧",
+        'address|where|location|find|directions':
+          "We're at 1703 KY Highway 121 N Bypass, Murray, KY 42071. Easy to find! 📍",
+        'phone|call|contact|email|reach':
+          "📞 Phone: (270) 759-1116\n📧 Email: cornerstonechirocenter@gmail.com\nWe're happy to help schedule or answer any questions!",
+        'first time|first visit|new patient|what to expect':
+          "Welcome! On your first visit, April (18 years of orthopedic experience) will thoroughly go over your health history so you feel heard. Then Dr. Adam or Dr. Dennis will do a comprehensive assessment, possibly including digital x-rays, and create your personalized treatment plan.",
+        'hello|hi|hey|good':
+          "Hey there! Welcome to Cornerstone Chiropractic! 😊 How can I help you today?",
+        'thank|thanks|appreciate':
+          "You're welcome! We look forward to seeing you. Give us a call at (270) 759-1116 anytime. 💜"
+      },
+      fallback: "Great question! For the best answer, call us at (270) 759-1116 or email cornerstonechirocenter@gmail.com. We're open Mon/Wed 8-11 & 2-5:30, Tue/Thu 9:30-11:30 & 3:30-5:30. Anything else?"
+    });
+
+    new AIChatbot({
+      isFloating: true,
+      name: "Cornerstone AI",
+      avatar: '🏛️',
+      greeting: "Hi! 👋 Need to schedule with Dr. Heskett, or have a question? I'm here!",
+      responses: {
+        'book|appointment|schedule': "Call (270) 759-1116 to book! Same-day emergencies available. 📅",
+        'hours|open': "Mon/Wed 8-11 & 2-5:30, Tue/Thu 9:30-11:30 & 3:30-5:30. Closed Fri-Sun. 🕐",
+        'pain|hurt|back|neck': "We can help! Dr. Adam & Dr. Dennis specialize in finding the source and providing lasting relief. Call (270) 759-1116!",
+        'insurance|cost': "We file insurance for you and work with most providers. Call us to discuss! 💰",
+        'emergency|urgent': "Same-day emergency visits available! Call (270) 759-1116 now. ⚡",
+        'child|kid|baby': "Dr. Adam specializes in pediatric adjustments for all ages! 👶",
+        'hello|hi|hey': "Hey! How can Cornerstone Chiropractic help you today? 😊",
+        'phone|contact': "(270) 759-1116 or cornerstonechirocenter@gmail.com 📞"
+      },
+      fallback: "Call us at (270) 759-1116 — we're happy to help!"
+    });
+  });
+</script>
+</body>
+</html>
