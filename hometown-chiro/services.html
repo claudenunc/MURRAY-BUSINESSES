@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-powered booking, patient engagement, and digital solutions for The Hometown Chiropractor by FooLiSHNeSS eNVy." />
+  <title>AI Solutions for Hometown Chiropractor | FooLiSHNeSS eNVy</title>
+  <link rel="stylesheet" href="../shared/styles.css" />
+  <style>
+    :root {
+      --primary: #0d9488;
+      --primary-light: #2dd4bf;
+      --primary-dark: #0f766e;
+      --primary-glow: rgba(13, 148, 136, 0.4);
+    }
+    .envy-brand .foolishness { font-weight:400; letter-spacing:1px; }
+    .envy-brand .envy { font-weight:800; background:linear-gradient(135deg,var(--primary-light),#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+    .problem-card { background:rgba(239,68,68,0.06); border:1px solid rgba(239,68,68,0.15); border-radius:var(--radius-lg); padding:var(--space-xl); }
+    .problem-card h4 { color:#f87171; }
+    .solution-card { background:rgba(6,214,160,0.06); border:1px solid rgba(6,214,160,0.15); border-radius:var(--radius-lg); padding:var(--space-xl); }
+    .solution-card h4 { color:var(--accent); }
+    .roi-card { background:linear-gradient(135deg,rgba(6,214,160,0.08),rgba(13,148,136,0.05)); border:1px solid rgba(6,214,160,0.2); border-radius:var(--radius-xl); padding:var(--space-2xl); text-align:center; }
+    .roi-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:var(--space-lg); margin-top:var(--space-xl); }
+    .roi-item .number { font-family:var(--font-heading); font-size:2rem; font-weight:800; color:var(--accent); }
+    .roi-item .label { font-size:0.85rem; color:var(--text-muted); margin-top:var(--space-xs); }
+    .process-timeline { position:relative; padding-left:40px; }
+    .process-timeline::before { content:''; position:absolute; left:15px; top:0; bottom:0; width:2px; background:var(--border); }
+    .timeline-step { position:relative; margin-bottom:var(--space-2xl); }
+    .timeline-step::before { content:attr(data-step); position:absolute; left:-40px; width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--accent)); color:white; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:700; line-height:30px; text-align:center; }
+    .timeline-step h4 { margin-bottom:var(--space-xs); }
+    .timeline-step p { color:var(--text-secondary); font-size:0.9rem; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="#top" class="nav-brand">
+      <span class="brand-icon" style="background:linear-gradient(135deg,#7c3aed,#06d6a0)">⚡</span>
+      <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">← View Demo Site</a></li>
+      <li><a href="#problem">The Problem</a></li>
+      <li><a href="#solutions">Solutions</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact-us" class="nav-cta">Let's Talk</a></li>
+    </ul>
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Custom Proposal for The Hometown Chiropractor
+      </div>
+      <h1>Your Care is World-Class. <span class="gradient-text">Your Digital Presence Should Be Too.</span></h1>
+      <p class="subtitle">Dr. Zimmerman, you already have a great site with OMADA. But imagine adding an AI booking assistant that handles scheduling, answers patient questions 24/7, and fills your calendar while you focus on care. That's what we build.</p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg">View Pricing 💰</a>
+        <a href="index.html" class="btn btn-secondary btn-lg">See Your AI Demo →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">The Opportunity</span>
+      <h2>You're Doing <span class="gradient-text">Great — Now Let's Scale It</span></h2>
+      <p class="subtitle">You have the skills, the reviews, and the locations. Here's where AI amplifies what you're already doing right.</p>
+    </div>
+    <div class="grid grid-2 animate-in">
+      <div class="problem-card">
+        <h4>🔧 Current Friction Points</h4>
+        <ul style="margin-top:var(--space-md);color:var(--text-secondary);font-size:0.9rem;list-style:none;display:flex;flex-direction:column;gap:var(--space-sm)">
+          <li>• Phone calls interrupt patient flow for booking</li>
+          <li>• No automated follow-up after first visit</li>
+          <li>• New patients don't know about wellness plans</li>
+          <li>• After-hours callers can't book or ask questions</li>
+          <li>• No automated reminders → missed appointments</li>
+          <li>• Staff time spent on scheduling instead of care</li>
+        </ul>
+      </div>
+      <div class="solution-card">
+        <h4>✅ With FooLiSHNeSS eNVy AI</h4>
+        <ul style="margin-top:var(--space-md);color:var(--text-secondary);font-size:0.9rem;list-style:none;display:flex;flex-direction:column;gap:var(--space-sm)">
+          <li>• AI chatbot books appointments 24/7</li>
+          <li>• Auto follow-up texts after first visit</li>
+          <li>• AI recommends Sustain/Restore/Elite plans</li>
+          <li>• After-hours AI handles questions & booking</li>
+          <li>• SMS appointment reminders → fewer no-shows</li>
+          <li>• Free up front desk for patient experience</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(13,148,136,0.04),transparent)">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">Who We Are</span>
+        <h2>Meet <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span></h2>
+        <p class="subtitle" style="margin-bottom:var(--space-xl)">Murray-based AI solutions. Led by <strong>Nathan Michel</strong>. We specialize in building AI tools that feel natural — because your patients should never feel like they're talking to a robot.</p>
+        <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:var(--space-xl)">We already know your business — your services, Dr. Z's credentials, your wellness plans, your real reviews. The AI assistant on your demo already answers questions about dry needling, prenatal care, sports chiro, and the difference between Sustain and Elite plans. That's our standard.</p>
+        <div style="display:flex;flex-direction:column;gap:var(--space-sm)">
+          <div class="contact-info-card"><div class="icon">👤</div><div><h4>Nathan Michel & eNVy</h4><p>Founder & AI Architect</p></div></div>
+          <div class="contact-info-card"><div class="icon">📧</div><div><h4>iamaienvy@gmail.com</h4><p><a href="mailto:iamaienvy@gmail.com">Email us</a></p></div></div>
+          <div class="contact-info-card"><div class="icon">📞</div><div><h4>(270) 709-0697</h4><p><a href="tel:2707090697">Call or text</a></p></div></div>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="roi-card">
+          <h3 style="margin-bottom:var(--space-sm)">Projected Impact</h3>
+          <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:var(--space-lg)">Based on similar chiropractic AI deployments</p>
+          <div class="roi-grid">
+            <div class="roi-item"><div class="number" data-count="35" data-suffix="%">0%</div><div class="label">More Bookings</div></div>
+            <div class="roi-item"><div class="number" data-count="50" data-suffix="%">0%</div><div class="label">Fewer Missed Calls</div></div>
+            <div class="roi-item"><div class="number" data-count="60" data-suffix="%">0%</div><div class="label">Reduction in No-Shows</div></div>
+            <div class="roi-item"><div class="number" data-count="15" data-suffix="hrs">0hrs</div><div class="label">Admin Time Saved / Month</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="solutions">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Your Solution</span>
+      <h2>What We Build <span class="gradient-text">For You</span></h2>
+      <p class="subtitle">AI tools that integrate with your existing JaneApp system and website.</p>
+    </div>
+    <div class="grid grid-2 animate-in">
+      <div class="card">
+        <div class="card-icon">🤖</div>
+        <h3>AI Booking Assistant</h3>
+        <p>24/7 chatbot that books appointments directly into your JaneApp calendar, answers questions about services and wellness plans, and handles after-hours inquiries naturally.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>SMS Follow-Up System</h3>
+        <p>Automated text reminders before appointments, follow-up messages after first visits, and wellness plan promotion via personalized SMS campaigns.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Patient Analytics Dashboard</h3>
+        <p>See booking trends, popular services, chat volume, and missed-call recovery stats. Know exactly how your AI is performing.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h3>New Patient Acquisition</h3>
+        <p>AI-powered web widget that captures pain complaints, recommends services, and converts "I'm just looking" into booked appointments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Investment</span>
+      <h2>Simple, Transparent <span class="gradient-text">Pricing</span></h2>
+      <p class="subtitle">One setup fee to build and configure everything. Then choose a plan.</p>
+    </div>
+
+    <div class="setup-card animate-in">
+      <span class="section-label" style="margin-bottom:var(--space-md)">One-Time Setup Fee</span>
+      <div style="font-family:var(--font-heading);font-size:2.8rem;font-weight:800;background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">$3,500</div>
+      <p style="color:var(--text-secondary);margin-top:var(--space-sm);font-size:0.95rem">AI chatbot + JaneApp integration + SMS system + analytics dashboard + deployment</p>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">50% deposit ($1,750) to start. Balance due at launch. Built in 2–3 weeks.</p>
+    </div>
+
+    <div class="pricing-grid animate-in">
+      <div class="pricing-card">
+        <div class="tier-name">Starter</div>
+        <div class="tier-desc">Core AI assistant</div>
+        <div class="price">$149<span>/mo</span></div>
+        <ul class="features-list">
+          <li>AI chatbot on your website</li>
+          <li>Basic booking assistance</li>
+          <li>FAQ auto-responses</li>
+          <li>Hosting & SSL</li>
+          <li>Email support (48hr)</li>
+          <li>Monthly performance report</li>
+        </ul>
+        <a href="#contact-us" class="btn btn-secondary">Get Started</a>
+      </div>
+      <div class="pricing-card featured">
+        <div class="tier-name">Growth</div>
+        <div class="tier-desc">Full AI + SMS automation</div>
+        <div class="price">$299<span>/mo</span></div>
+        <ul class="features-list">
+          <li>Everything in Starter</li>
+          <li>Advanced AI with learning</li>
+          <li>SMS appointment reminders</li>
+          <li>Post-visit follow-up texts</li>
+          <li>Wellness plan recommendations</li>
+          <li>Analytics dashboard</li>
+          <li>Priority support (24hr)</li>
+          <li>Quarterly strategy call</li>
+        </ul>
+        <a href="#contact-us" class="btn btn-primary">Best Value →</a>
+      </div>
+      <div class="pricing-card">
+        <div class="tier-name">Enterprise</div>
+        <div class="tier-desc">Full-service AI partner</div>
+        <div class="price">$499<span>/mo</span></div>
+        <ul class="features-list">
+          <li>Everything in Growth</li>
+          <li>AI voice assistant for phone</li>
+          <li>Multi-location support</li>
+          <li>Custom JaneApp integrations</li>
+          <li>Dedicated account manager</li>
+          <li>Social media AI content</li>
+          <li>Same-day support</li>
+          <li>Monthly strategy sessions</li>
+        </ul>
+        <a href="#contact-us" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-2xl)" class="animate-in">
+      <p style="color:var(--text-muted);font-size:0.85rem">Month-to-month. No long-term contracts. Cancel anytime.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(6,214,160,0.04),transparent)">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">How It Works</span>
+        <h2>From Handshake to <span class="gradient-text">Launch in 3 Weeks</span></h2>
+        <div class="process-timeline" style="margin-top:var(--space-2xl)">
+          <div class="timeline-step" data-step="1"><h4>Discovery Call</h4><p>30 min — we walk through the demo, discuss your goals, and identify the best integration points with JaneApp.</p></div>
+          <div class="timeline-step" data-step="2"><h4>Design & Strategy</h4><p>We finalize the chatbot conversation flows, SMS templates, and analytics dashboard design. You approve everything.</p></div>
+          <div class="timeline-step" data-step="3"><h4>Build & Integrate</h4><p>We build the AI system, integrate with JaneApp, test every flow, and make sure it handles your specific services — dry needling, prenatal, sports, all of it.</p></div>
+          <div class="timeline-step" data-step="4"><h4>Launch & Train</h4><p>Deploy live on your site, show you the dashboard, make sure everything's running smooth.</p></div>
+          <div class="timeline-step" data-step="5"><h4>Ongoing Partnership</h4><p>Monthly reports, continuous AI improvement, and a partner who's a phone call away.</p></div>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="card" style="padding:var(--space-3xl)">
+          <h3 style="margin-bottom:var(--space-xl)">Why Dr. Zimmerman Should Choose Us</h3>
+          <div style="display:flex;flex-direction:column;gap:var(--space-xl)">
+            <div><h4>🏠 Murray Local</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">We're neighbors. Same community, same values, same commitment to doing right by people.</p></div>
+            <div><h4>🧠 AI That Knows Your Business</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">The demo chatbot already handles dry needling questions, wellness plan comparisons, and prenatal care inquiries. Not generic — built for YOU.</p></div>
+            <div><h4>🔗 JaneApp Compatible</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">We integrate directly with your existing booking system. No platform changes, no disruption.</p></div>
+            <div><h4>💰 Pay for Results</h4><p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">$3,500 setup is less than a month of front desk salary. $299/mo is less than a part-time receptionist. The AI works 24/7.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact-us">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Let's Talk</span>
+      <h2>Ready to <span class="gradient-text">Level Up?</span></h2>
+      <p class="subtitle">Free 30-minute discovery call. We'll walk through the demo live and answer every question.</p>
+    </div>
+    <div class="animate-in" style="max-width:600px;margin:0 auto">
+      <div style="display:flex;flex-direction:column;gap:var(--space-md)">
+        <div class="contact-info-card"><div class="icon">👤</div><div><h4>Nathan Michel</h4><p class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></p></div></div>
+        <div class="contact-info-card"><div class="icon">📧</div><div><h4>Email</h4><p><a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a></p></div></div>
+        <div class="contact-info-card"><div class="icon">📞</div><div><h4>Call or Text</h4><p><a href="tel:2707090697">(270) 709-0697</a></p></div></div>
+      </div>
+      <div style="text-align:center;margin-top:var(--space-2xl)">
+        <a href="mailto:iamaienvy@gmail.com?subject=Hometown%20Chiropractor%20-%20AI%20Solutions%20Inquiry&body=Hi%20Nathan,%0A%0AI'm%20interested%20in%20AI%20solutions%20for%20The%20Hometown%20Chiropractor.%0A%0ABest%20time%20to%20chat:%20%0A%0AThanks!" class="btn btn-primary btn-lg">📧 Start the Conversation</a>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">Or call/text: (270) 709-0697</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border:none;padding-top:0">
+      <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span>
+      <span>&copy; 2026 FooLiSHNeSS eNVy · Murray, KY</span>
+      <span><a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a> · <a href="tel:2707090697">(270) 709-0697</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="../shared/animations.js"></script>
+</body>
+</html>

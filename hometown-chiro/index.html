@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Hometown Chiropractor — Murray, KY. AI-powered scheduling, chiropractic adjustments, pain management, and wellness care. Book online instantly." />
-  <title>The Hometown Chiropractor | Murray, KY — AI-Powered Booking</title>
+  <meta name="description" content="The Hometown Chiropractor — Dr. Drew Zimmerman DC. Murray, KY's trusted chiropractor. Spinal adjustments, dry needling, sports & prenatal chiropractic, massage therapy. Walk-ins welcome." />
+  <title>The Hometown Chiropractor | Dr. Drew Zimmerman DC | Murray, KY</title>
   <link rel="stylesheet" href="../shared/styles.css" />
   <style>
     :root {
@@ -17,36 +17,50 @@
       --accent-dark: #7c3aed;
       --accent-glow: rgba(139, 92, 246, 0.3);
     }
-    .service-tag {
-      display: inline-block;
-      padding: var(--space-xs) var(--space-md);
+    .wellness-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-2xl);
+      text-align: center;
+      transition: all var(--transition-base);
+    }
+    .wellness-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .wellness-card.popular { border-color: var(--primary-light); background: linear-gradient(180deg, rgba(13,148,136,0.08), var(--bg-card)); box-shadow: var(--shadow-glow); position: relative; }
+    .wellness-card.popular::before { content:'BEST VALUE'; position:absolute; top:-12px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,var(--primary),var(--accent)); color:white; font-size:0.7rem; font-weight:700; letter-spacing:1px; padding:4px 16px; border-radius:var(--radius-full); }
+    .wellness-card .plan-name { font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700; margin-bottom: var(--space-sm); }
+    .wellness-card .plan-price { font-family: var(--font-heading); font-size: 2.5rem; font-weight: 800; }
+    .wellness-card .plan-price span { font-size: 1rem; font-weight: 400; color: var(--text-muted); }
+    .condition-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
       background: var(--bg-glass);
       border: 1px solid var(--border);
       border-radius: var(--radius-full);
       font-size: 0.8rem;
-      color: var(--primary-light);
-      margin: 0 var(--space-xs) var(--space-xs) 0;
-    }
-    .insurance-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: var(--space-md);
-      margin-top: var(--space-xl);
-    }
-    .insurance-card {
-      background: var(--bg-glass);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: var(--space-lg);
-      text-align: center;
-      font-size: 0.9rem;
-      font-weight: 500;
+      color: var(--text-secondary);
       transition: all var(--transition-fast);
+      cursor: default;
     }
-    .insurance-card:hover {
-      border-color: var(--primary-light);
-      background: var(--bg-glass-strong);
+    .condition-chip:hover { border-color: var(--primary-light); color: var(--primary-light); }
+    .doc-card {
+      background: linear-gradient(135deg, rgba(13,148,136,0.08), rgba(139,92,246,0.05));
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-xl);
+      padding: var(--space-3xl);
     }
+    .doc-credential {
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      padding: var(--space-sm) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .doc-credential:last-child { border: none; }
   </style>
 </head>
 <body>
@@ -60,8 +74,9 @@
     </a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
+      <li><a href="#dr-drew">Dr. Zimmerman</a></li>
+      <li><a href="#wellness">Wellness Plans</a></li>
       <li><a href="#ai-booking">AI Booking</a></li>
-      <li><a href="#insurance">Insurance</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="services.html" class="nav-cta">AI Solutions</a></li>
     </ul>
@@ -81,26 +96,26 @@
     <div class="hero-content">
       <div class="hero-badge">
         <span class="pulse"></span>
-        AI-Powered Scheduling
+        Dr. Drew Zimmerman DC · Murray Native
       </div>
-      <h1>Align Your Body. <br><span class="gradient-text">Automate Your Schedule.</span></h1>
-      <p class="subtitle">Murray's trusted chiropractic care — now with an intelligent booking assistant that schedules your appointments, verifies insurance, and follows up automatically.</p>
+      <h1>Say Goodbye to Pain. <br><span class="gradient-text">Start Moving Again.</span></h1>
+      <p class="subtitle">Your journey to a pain-free life is more than just a treatment — it's a revolution. Experience the healing power of hands-on chiropractic care with Dr. Drew Zimmerman, proudly serving the Murray, Kentucky community.</p>
       <div class="hero-actions">
         <a href="#ai-booking" class="btn btn-primary btn-lg">Book with AI Assistant 🤖</a>
         <a href="tel:2702275563" class="btn btn-secondary btn-lg">📞 (270) 227-5563</a>
       </div>
       <div class="hero-stats">
         <div class="hero-stat">
-          <div class="stat-number" data-count="2500" data-suffix="+">0+</div>
-          <div class="stat-label">Patients Treated</div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Chronic Pain Relief Focus</div>
         </div>
         <div class="hero-stat">
-          <div class="stat-number" data-count="4.9">0</div>
-          <div class="stat-label">★ Google Rating</div>
+          <div class="stat-number">97%</div>
+          <div class="stat-label">Immune System Support</div>
         </div>
         <div class="hero-stat">
-          <div class="stat-number" data-count="95" data-suffix="%">0%</div>
-          <div class="stat-label">Report Pain Relief</div>
+          <div class="stat-number">All Ages</div>
+          <div class="stat-label">Newborns to Seniors</div>
         </div>
       </div>
     </div>
@@ -111,55 +126,150 @@
 <section class="section" id="services">
   <div class="container">
     <div class="section-header animate-in">
-      <span class="section-label">Our Expertise</span>
-      <h2>Comprehensive <span class="gradient-text">Chiropractic Care</span></h2>
-      <p class="subtitle">From acute pain relief to long-term wellness, we offer personalized treatment plans that get you back to living your best life.</p>
+      <span class="section-label">What We Offer</span>
+      <h2>Chiropractic <span class="gradient-text">Services</span></h2>
+      <p class="subtitle">Every session is customized to your current state. Whether you need swift, exact joint relief or gentle low-force mobilization — we tailor each treatment to your comfort and needs.</p>
     </div>
     <div class="grid grid-3">
       <div class="card animate-in delay-1">
-        <div class="card-icon">🦴</div>
-        <h3>Spinal Adjustments</h3>
-        <p>Precise, gentle adjustments to restore proper spinal alignment. Our techniques reduce nerve interference and promote natural healing.</p>
-        <div style="margin-top:var(--space-md)">
-          <span class="service-tag">Manual</span>
-          <span class="service-tag">Instrument</span>
-          <span class="service-tag">Activator</span>
-        </div>
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark))">🦴</div>
+        <h3>Chiropractic Adjustments</h3>
+        <p>Gentle spinal adjustments to restore alignment and function. High-velocity precision or low-force mobilization — not a fan of the "pop"? We'll tailor a comfortable approach just for you.</p>
       </div>
       <div class="card animate-in delay-2">
-        <div class="card-icon">💪</div>
-        <h3>Pain Management</h3>
-        <p>Effective, drug-free pain relief for back pain, neck pain, migraines, sciatica, and more. We treat the root cause, not just symptoms.</p>
-        <div style="margin-top:var(--space-md)">
-          <span class="service-tag">Back Pain</span>
-          <span class="service-tag">Neck</span>
-          <span class="service-tag">Sciatica</span>
-        </div>
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark))">💆</div>
+        <h3>Chiropractic Massage</h3>
+        <p>Targeted massage therapy to relieve tension, reduce muscle spasm, and improve circulation. Combined with adjustments for comprehensive healing.</p>
       </div>
       <div class="card animate-in delay-3">
-        <div class="card-icon">🏃</div>
-        <h3>Sports Rehabilitation</h3>
-        <p>Get back in the game faster with targeted rehab programs. We work with athletes of all levels to restore function and prevent re-injury.</p>
-        <div style="margin-top:var(--space-md)">
-          <span class="service-tag">Athletes</span>
-          <span class="service-tag">Recovery</span>
-          <span class="service-tag">Prevention</span>
-        </div>
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--primary),var(--primary-dark))">📌</div>
+        <h3>Dry Needling</h3>
+        <p>A specialized technique to reduce muscle tension, improve mobility, and alleviate chronic pain. Precise trigger point therapy for lasting relief.</p>
       </div>
       <div class="card animate-in delay-1">
-        <div class="card-icon">🧘</div>
-        <h3>Wellness Plans</h3>
-        <p>Proactive care packages for ongoing spinal health. Regular adjustments prevent problems before they start and keep you performing at your peak.</p>
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-dark))">🏃</div>
+        <h3>Sports Chiropractic</h3>
+        <p>Tailored care to help athletes perform at their best. Movement evaluation, functional correction, and performance optimization for any sport or fitness level.</p>
       </div>
       <div class="card animate-in delay-2">
-        <div class="card-icon">🤕</div>
-        <h3>Auto Accident Injuries</h3>
-        <p>Whiplash, herniated discs, and soft tissue injuries from car accidents. We document everything for your insurance claim and guide your recovery.</p>
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-dark))">🤰</div>
+        <h3>Prenatal Chiropractic</h3>
+        <p>Specialized Webster technique to ease pregnancy discomfort, support optimal fetal positioning, and prepare your body for delivery. Safe and gentle for mom and baby.</p>
       </div>
       <div class="card animate-in delay-3">
-        <div class="card-icon">👶</div>
-        <h3>Pediatric & Prenatal</h3>
-        <p>Gentle, safe chiropractic care for children and expectant mothers. Specialized techniques adapted for growing bodies and pregnant patients.</p>
+        <div class="card-icon" style="background:linear-gradient(135deg,var(--accent),var(--accent-dark))">👶</div>
+        <h3>Pediatric & Family</h3>
+        <p>Safe, gentle chiropractic care for all ages — from newborns to seniors. Supporting growing spines and keeping the whole family aligned and healthy.</p>
+      </div>
+    </div>
+
+    <!-- Conditions Treated -->
+    <div style="text-align:center;margin-top:var(--space-3xl)" class="animate-in">
+      <h3 style="margin-bottom:var(--space-lg)">Conditions We Treat</h3>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-sm)">
+        <span class="condition-chip">🔙 Back Pain</span>
+        <span class="condition-chip">🦒 Neck Pain & Stiffness</span>
+        <span class="condition-chip">🦵 Knee Pain</span>
+        <span class="condition-chip">⚡ Sciatica</span>
+        <span class="condition-chip">🤕 Headaches & Migraines</span>
+        <span class="condition-chip">💪 Shoulder Pain</span>
+        <span class="condition-chip">✋ Wrist Pain</span>
+        <span class="condition-chip">🦶 Ankle Pain</span>
+        <span class="condition-chip">🏋️ Sports Injuries</span>
+        <span class="condition-chip">🤰 Pregnancy Discomfort</span>
+        <span class="condition-chip">😫 Chronic Pain</span>
+        <span class="condition-chip">🏃 Limited Mobility</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Dr. Drew Zimmerman ══════ -->
+<section class="section" id="dr-drew" style="background:linear-gradient(180deg,transparent,rgba(13,148,136,0.04),transparent)">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">Meet Your Doctor</span>
+        <h2>Dr. Drew Zimmerman <span class="gradient-text">DC</span></h2>
+        <p class="subtitle" style="margin-bottom:var(--space-xl)">Proudly serving the Murray, Kentucky community. A hometown practitioner who combines exercise science expertise with chiropractic care for results that last.</p>
+        <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:var(--space-xl)">Dr. Zimmerman doesn't just "pop backs" — he takes the time to identify your pain triggers, actively listens to your concerns, and creates treatment plans that deliver real results. Patients consistently praise his thorough assessments, personalized attention, and supportive guidance throughout their healing journey.</p>
+        <div style="display:flex;flex-direction:column;gap:var(--space-sm)">
+          <div class="doc-credential">🎓 BS Exercise Science — Murray State University (2017)</div>
+          <div class="doc-credential">🩺 Doctorate of Chiropractic — University of Western States (2021)</div>
+          <div class="doc-credential">💪 Certified Personal Trainer & Chiropractor</div>
+          <div class="doc-credential">🏠 Murray, KY Native</div>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="doc-card">
+          <h3 style="margin-bottom:var(--space-lg)">What Patients Say</h3>
+          <div style="display:flex;flex-direction:column;gap:var(--space-lg)">
+            <div class="testimonial-card" style="background:transparent;border:none;padding:0">
+              <div class="stars">★★★★★</div>
+              <blockquote>"Dr. Zimmerman takes the necessary time to identify issues, actively listens to concerns, and effectively delivers results. I've experienced significant improvement in my mobility and pain levels."</blockquote>
+            </div>
+            <div class="testimonial-card" style="background:transparent;border:none;padding:0">
+              <div class="stars">★★★★★</div>
+              <blockquote>"He doesn't just crack your back and send you off — he explains exactly what's going on, teaches you exercises for home, and creates a real plan for getting better. Best chiropractor I've been to."</blockquote>
+            </div>
+            <div class="testimonial-card" style="background:transparent;border:none;padding:0">
+              <div class="stars">★★★★★</div>
+              <blockquote>"Came in with persistent lower back pain that wouldn't go away. After Dr. Zimmerman's thorough assessment and personalized treatment, I'm feeling better than I have in years."</blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Wellness Plans ══════ -->
+<section class="section" id="wellness">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Membership</span>
+      <h2>Wellness <span class="gradient-text">Plans</span></h2>
+      <p class="subtitle">Lasting health starts with regular care. Our wellness memberships earn you a dedicated weekly time slot and consistent, proactive chiropractic maintenance.</p>
+    </div>
+    <div class="grid grid-3 animate-in">
+      <!-- Sustain -->
+      <div class="wellness-card">
+        <div class="plan-name">Sustain Wellness</div>
+        <div class="plan-price">$99<span>/mo</span></div>
+        <ul class="features-list" style="margin-top:var(--space-xl);text-align:left">
+          <li>Back & neck adjustments</li>
+          <li>Routine spinal adjustments</li>
+          <li>Dedicated weekly time slot</li>
+          <li>Reduce neural tension</li>
+          <li>Promote overall wellness</li>
+        </ul>
+        <a href="#ai-booking" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:var(--space-lg)">Sign Me Up</a>
+      </div>
+      <!-- Restore -->
+      <div class="wellness-card popular">
+        <div class="plan-name">Restore Wellness</div>
+        <div class="plan-price">$149<span>/mo</span></div>
+        <ul class="features-list" style="margin-top:var(--space-xl);text-align:left">
+          <li>Everything in Sustain</li>
+          <li>Hip & shoulder pain treatment</li>
+          <li>Extremity adjustments</li>
+          <li>Ankle & wrist care</li>
+          <li>Weekly dedicated slot</li>
+        </ul>
+        <a href="#ai-booking" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:var(--space-lg)">Sign Me Up</a>
+      </div>
+      <!-- Elite -->
+      <div class="wellness-card">
+        <div class="plan-name">Elite Wellness</div>
+        <div class="plan-price">$199<span>/mo</span></div>
+        <ul class="features-list" style="margin-top:var(--space-xl);text-align:left">
+          <li>Everything in Restore</li>
+          <li>Deep tissue & restorative care</li>
+          <li>Movement evaluation</li>
+          <li>Functional exercise programming</li>
+          <li>Ideal for athletes & active lifestyles</li>
+        </ul>
+        <a href="#ai-booking" class="btn btn-secondary" style="width:100%;justify-content:center;margin-top:var(--space-lg)">Sign Me Up</a>
       </div>
     </div>
   </div>
@@ -171,130 +281,13 @@
     <div class="section-header animate-in">
       <span class="section-label">Try It Live</span>
       <h2>Your AI <span class="gradient-text">Booking Assistant</span></h2>
-      <p class="subtitle">No more phone tag. Our intelligent assistant books your appointment, checks availability, and handles insurance verification — all in a natural conversation.</p>
+      <p class="subtitle">No more phone tag. Ask about services, wellness plans, hours, or book an appointment — all in a natural conversation. This is what your patients would experience.</p>
     </div>
     <div class="ai-demo-container animate-in" id="chiro-chat-embed">
       <!-- Chatbot embeds here -->
     </div>
     <div style="text-align:center;margin-top:var(--space-xl)" class="animate-in">
-      <p style="color:var(--text-muted);font-size:0.85rem">Try asking: "I need an appointment for back pain" or "What insurance do you accept?"</p>
-    </div>
-  </div>
-</section>
-
-<!-- ══════ How AI Booking Works ══════ -->
-<section class="section">
-  <div class="container">
-    <div class="feature-row">
-      <div class="animate-in">
-        <span class="section-label">Smart Scheduling</span>
-        <h2>How AI Booking <span class="gradient-text">Works</span></h2>
-        <p class="subtitle" style="margin-bottom:var(--space-xl)">The old way: call, wait on hold, play phone tag, hope for a callback. The new way:</p>
-        <div style="display:flex;flex-direction:column;gap:var(--space-lg)">
-          <div class="card" style="padding:var(--space-lg)">
-            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">1️⃣ Patient Messages Anytime</h4>
-            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Via chatbot on website, SMS, or social media — 24 hours a day.</p>
-          </div>
-          <div class="card" style="padding:var(--space-lg)">
-            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">2️⃣ AI Checks Availability</h4>
-            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Instantly scans your calendar, finds open slots, and suggests best options.</p>
-          </div>
-          <div class="card" style="padding:var(--space-lg)">
-            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">3️⃣ Confirms & Sends Reminders</h4>
-            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Books the appointment, sends confirmation text, and reminds them 24 hours before.</p>
-          </div>
-          <div class="card" style="padding:var(--space-lg)">
-            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">4️⃣ Auto Follow-Up</h4>
-            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">After the visit, AI checks in on recovery and suggests the next appointment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="animate-in delay-2">
-        <div class="card" style="text-align:center;padding:var(--space-3xl)">
-          <div style="font-size:4rem;margin-bottom:var(--space-lg)">📉</div>
-          <h3 style="margin-bottom:var(--space-md)">Reduce No-Shows by <span class="gradient-text">60%</span></h3>
-          <p style="color:var(--text-secondary);font-size:0.95rem">Automated reminders and easy rescheduling mean fewer empty chair slots and more revenue.</p>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);margin-top:var(--space-2xl)">
-            <div>
-              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--primary-light)" data-count="85" data-suffix="%">0%</div>
-              <div style="font-size:0.8rem;color:var(--text-muted);margin-top:var(--space-xs)">Less Phone Time</div>
-            </div>
-            <div>
-              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--accent)" data-count="24" data-suffix="/7">0/7</div>
-              <div style="font-size:0.8rem;color:var(--text-muted);margin-top:var(--space-xs)">Booking Available</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ══════ Insurance ══════ -->
-<section class="section" id="insurance" style="background:linear-gradient(180deg,transparent,rgba(13,148,136,0.04),transparent)">
-  <div class="container">
-    <div class="section-header animate-in">
-      <span class="section-label">Coverage</span>
-      <h2>Insurance <span class="gradient-text">Accepted</span></h2>
-      <p class="subtitle">We accept most major insurance plans. Our AI can verify your coverage instantly.</p>
-    </div>
-    <div class="insurance-grid animate-in">
-      <div class="insurance-card">🛡️ Blue Cross Blue Shield</div>
-      <div class="insurance-card">🏥 Aetna</div>
-      <div class="insurance-card">💊 United Healthcare</div>
-      <div class="insurance-card">❤️ Medicare</div>
-      <div class="insurance-card">🌟 Humana</div>
-      <div class="insurance-card">📋 Cigna</div>
-      <div class="insurance-card">🤝 Workers' Comp</div>
-      <div class="insurance-card">💳 Self-Pay Available</div>
-    </div>
-    <div style="text-align:center;margin-top:var(--space-xl)" class="animate-in">
-      <p style="color:var(--text-muted);font-size:0.9rem">Don't see your plan? Ask our AI assistant or call us — we work with most providers.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ══════ Testimonials ══════ -->
-<section class="section">
-  <div class="container">
-    <div class="section-header animate-in">
-      <span class="section-label">Patient Stories</span>
-      <h2>What Murray <span class="gradient-text">Says About Us</span></h2>
-    </div>
-    <div class="grid grid-3">
-      <div class="testimonial-card animate-in delay-1">
-        <div class="stars">★★★★★</div>
-        <blockquote>"I've been dealing with chronic back pain for years. After just 3 weeks of treatment here, I'm sleeping through the night again. Life-changing."</blockquote>
-        <div class="author">
-          <div class="author-avatar">KW</div>
-          <div class="author-info">
-            <div class="name">Karen W.</div>
-            <div class="role">Patient — 6 months</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card animate-in delay-2">
-        <div class="stars">★★★★★</div>
-        <blockquote>"The AI booking was a game-changer. I texted at 10pm and had an appointment booked by the time I woke up. No waiting on hold!"</blockquote>
-        <div class="author">
-          <div class="author-avatar">MB</div>
-          <div class="author-info">
-            <div class="name">Mike B.</div>
-            <div class="role">New Patient</div>
-          </div>
-        </div>
-      </div>
-      <div class="testimonial-card animate-in delay-3">
-        <div class="stars">★★★★★</div>
-        <blockquote>"Brought my daughter after a soccer injury. They were so gentle and thorough. She was back on the field in 2 weeks. Truly hometown care."</blockquote>
-        <div class="author">
-          <div class="author-avatar">LT</div>
-          <div class="author-info">
-            <div class="name">Lisa T.</div>
-            <div class="role">Parent</div>
-          </div>
-        </div>
-      </div>
+      <p style="color:var(--text-muted);font-size:0.85rem">Try: "My back hurts" · "What's the Elite plan?" · "Do you do dry needling?" · "What are your hours?"</p>
     </div>
   </div>
 </section>
@@ -305,6 +298,7 @@
     <div class="section-header animate-in">
       <span class="section-label">Visit Us</span>
       <h2>The Hometown <span class="gradient-text">Chiropractor</span></h2>
+      <p class="subtitle">Dr. Drew Zimmerman DC — serving Murray, Kentucky with personalized chiropractic care.</p>
     </div>
     <div class="contact-grid animate-in">
       <div>
@@ -335,16 +329,30 @@
             <div>
               <h4>Hours</h4>
               <table class="hours-table">
-                <tr><td>Mon, Wed, Fri</td><td>8:00 AM – 5:00 PM</td></tr>
-                <tr><td>Tue, Thu</td><td>10:00 AM – 6:00 PM</td></tr>
+                <tr><td>Monday</td><td>9 AM – 12 PM, 1 – 5 PM</td></tr>
+                <tr><td>Tuesday</td><td>9 AM – 12 PM, 1 – 5 PM</td></tr>
+                <tr><td>Wednesday</td><td>9 AM – 12 PM, 1 – 5 PM</td></tr>
+                <tr><td>Thursday</td><td>9 AM – 12 PM, 1 – 5 PM</td></tr>
+                <tr><td>Friday</td><td>1 – 5 PM</td></tr>
                 <tr><td>Sat – Sun</td><td>Closed</td></tr>
               </table>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📱</div>
+            <div>
+              <h4>Follow Us</h4>
+              <p>
+                <a href="https://www.facebook.com/profile.php?id=61559658163961" target="_blank">Facebook</a> ·
+                <a href="https://www.instagram.com/thehometownchiro/" target="_blank">Instagram</a> ·
+                <a href="https://x.com/drewzimmermandc" target="_blank">X</a>
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-88.32!3d36.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM3JzEyLjAiTiA4OMKwMTknMTIuMCJX!5e0!3m2!1sen!2sus!4v1!5m2!1sen!2sus" loading="lazy" title="Map to The Hometown Chiropractor"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-88.32!3d36.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM3JzEyLjAiTiA4OMKwMTknMTIuMCJX!5e0!3m2!1sen!2sus!4v1!5m2!1sen!2sus" loading="lazy" title="The Hometown Chiropractor — 404 N 4th St, Murray, KY"></iframe>
       </div>
     </div>
   </div>
@@ -359,38 +367,40 @@
           <span class="brand-icon">🦴</span>
           The Hometown Chiropractor
         </div>
-        <p>Murray, Kentucky's trusted chiropractic practice — now with intelligent AI scheduling for seamless patient care.</p>
+        <p>Dr. Drew Zimmerman DC — Murray native, serving our community with personalized, hands-on chiropractic care for all ages.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
         <ul>
           <li><a href="#services">Services</a></li>
-          <li><a href="#ai-booking">AI Booking</a></li>
-          <li><a href="#insurance">Insurance</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#dr-drew">Dr. Zimmerman</a></li>
+          <li><a href="#wellness">Wellness Plans</a></li>
+          <li><a href="#ai-booking">Book Online</a></li>
         </ul>
       </div>
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="#">Spinal Adjustments</a></li>
-          <li><a href="#">Pain Management</a></li>
-          <li><a href="#">Sports Rehab</a></li>
-          <li><a href="#">Wellness Plans</a></li>
+          <li><a href="#services">Adjustments</a></li>
+          <li><a href="#services">Dry Needling</a></li>
+          <li><a href="#services">Sports Chiro</a></li>
+          <li><a href="#services">Prenatal Care</a></li>
+          <li><a href="#services">Massage</a></li>
         </ul>
       </div>
       <div>
-        <h4>AI Solutions</h4>
+        <h4>Connect</h4>
         <ul>
-          <li><a href="services.html">Our Services</a></li>
-          <li><a href="services.html#pricing">Pricing</a></li>
-          <li><a href="services.html#contact-us">Get Started</a></li>
+          <li><a href="tel:2702275563">(270) 227-5563</a></li>
+          <li><a href="mailto:chiromotionspine@icloud.com">Email Us</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61559658163961" target="_blank">Facebook</a></li>
+          <li><a href="https://www.instagram.com/thehometownchiro/" target="_blank">Instagram</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 The Hometown Chiropractor. Demo by <a href="services.html">FooLiSHNeSS eNVy</a>.</span>
-      <span>Powered by <a href="services.html">FooLiSHNeSS eNVy</a> AI Solutions</span>
+      <span>&copy; 2026 The Hometown Chiropractor · 404 N 4th St Suite C, Murray, KY</span>
+      <span>AI Demo by <a href="services.html">FooLiSHNeSS eNVy</a> · <a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a></span>
     </div>
   </div>
 </footer>
@@ -400,14 +410,68 @@
 <script src="../shared/chatbot.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // Embedded booking assistant
-    createChiroChatbot({
+    // Embedded chatbot with REAL Hometown Chiro data
+    new AIChatbot({
       containerId: 'chiro-chat-embed',
-      isFloating: false
+      isFloating: false,
+      name: "Hometown Chiro Assistant",
+      avatar: '🦴',
+      greeting: "Welcome to The Hometown Chiropractor! 👋 I'm here to help you book an appointment with Dr. Drew Zimmerman, answer questions about our services, or tell you about our wellness plans. How can I help?",
+      responses: {
+        'book|appointment|schedule|available|slot|opening|sign up':
+          "I'd love to get you in with Dr. Zimmerman! You can book directly at thehometownchiro.janeapp.com, or tell me what day works best — Mon-Thu we're open 9-12 & 1-5, Fridays 1-5. Is this your first visit? 📅",
+        'first visit|first time|new patient|never been':
+          "Welcome! For new patients, Dr. Zimmerman does a thorough assessment to identify your pain triggers and create a personalized treatment plan. He takes his time — no rushing. What brings you in?",
+        'hours|open|close|when':
+          "Our hours are:\n• Mon–Thu: 9 AM – 12 PM, 1 – 5 PM\n• Friday: 1 – 5 PM\n• Sat–Sun: Closed\nWalk-ins are welcome! 🕐",
+        'pain|hurt|back|neck|shoulder|knee|headache|sciatica|ankle|wrist|ache':
+          "I'm sorry you're dealing with that! 😔 Dr. Zimmerman specializes in identifying pain triggers and creating lasting solutions — not just quick fixes. He treats back pain, neck pain, knee pain, sciatica, headaches, shoulder/hip/ankle/wrist pain, and more. Want me to help you book?",
+        'dry needling|needle|trigger point':
+          "Yes! We offer dry needling — it's a specialized technique that targets trigger points to reduce muscle tension, improve mobility, and provide lasting relief from chronic pain. Dr. Zimmerman is trained and experienced in this technique. 📌",
+        'massage|tension|muscle':
+          "We offer chiropractic massage therapy! Targeted massage to relieve tension, reduce muscle spasm, and improve circulation. It works great combined with adjustments for comprehensive healing. 💆",
+        'sports|athlete|performance|training|fitness':
+          "Dr. Zimmerman has a BS in Exercise Science and is both a certified personal trainer and chiropractor — perfect for athletes! Our Sports Chiropractic includes movement evaluation, functional correction, and performance optimization. The Elite Wellness plan ($199/mo) is ideal for active people. 🏃",
+        'prenatal|pregnant|pregnancy|baby|webster':
+          "Absolutely! We offer specialized prenatal chiropractic using the Webster technique. It helps ease pregnancy discomfort, supports optimal fetal positioning, and prepares your body for delivery. Safe and gentle for mom and baby. 🤰",
+        'pediatric|child|kid|children|infant|newborn|toddler':
+          "Yes! We provide safe, gentle chiropractic care for kids of all ages — from newborns to teens. We support growing spines with age-appropriate techniques. The whole family is welcome! 👶",
+        'plan|wellness|membership|monthly|sustain|restore|elite':
+          "We have 3 wellness plans:\n• **Sustain** — $99/mo: Back & neck adjustments, weekly visits\n• **Restore** — $149/mo: + Hip, shoulder & extremity care\n• **Elite** — $199/mo: + Deep tissue, movement eval, functional exercises\nAll plans include a dedicated weekly time slot. Which interests you?",
+        'cost|price|how much|insurance|pay':
+          "Our wellness plans start at $99/mo for weekly visits. For individual visits, give us a call at (270) 227-5563 and we'll discuss pricing and insurance options. We want to make care accessible!",
+        'drew|zimmerman|doctor|dr|who':
+          "Dr. Drew Zimmerman is a Murray native! He earned his BS in Exercise Science from Murray State University (2017) and his Doctorate of Chiropractic from the University of Western States (2021). He's both a certified personal trainer and chiropractor — a unique combination! 🩺",
+        'address|where|located|location|find|directions':
+          "We're at 404 N 4th St, Suite C, Murray, KY 42071. Easy to find and plenty of parking! 📍",
+        'phone|call|contact|email':
+          "📞 Phone: (270) 227-5563\n📧 Email: chiromotionspine@icloud.com\nYou can also find us on Facebook and Instagram @thehometownchiro!",
+        'pop|crack|scared|gentle|afraid|nervous':
+          "Not a fan of the \"pop\"? No worries at all! 😊Dr. Zimmerman offers both high-velocity adjustments AND gentle, low-force mobilizations. Each technique is tailored to YOUR comfort level. You're always in control.",
+        'hello|hi|hey|good':
+          "Hey there! Welcome to The Hometown Chiropractor! 😊 I can help you book with Dr. Zimmerman, answer questions about services, or tell you about our wellness plans. What's on your mind?",
+        'thank|thanks|appreciate':
+          "You're welcome! We look forward to helping you feel your best. Don't hesitate to reach out anytime! 💚"
+      },
+      fallback: "Great question! For the most detailed answer, call us at (270) 227-5563 or email chiromotionspine@icloud.com. You can also book online at thehometownchiro.janeapp.com. Anything else I can help with?"
     });
+
     // Floating widget
-    createChiroChatbot({
-      isFloating: true
+    new AIChatbot({
+      isFloating: true,
+      name: "Book with Dr. Z",
+      avatar: '🦴',
+      greeting: "Hey! 👋 Need to book with Dr. Zimmerman or have a question? I'm here to help!",
+      responses: {
+        'book|appointment|schedule': "You can book at thehometownchiro.janeapp.com or tell me what day works and I'll guide you! 📅",
+        'hours|open': "Mon–Thu 9-12 & 1-5, Friday 1-5. Walk-ins welcome! 🕐",
+        'pain|hurt|back|neck': "Dr. Zimmerman can help! He specializes in finding pain triggers and creating lasting solutions. Want to book?",
+        'plan|wellness|price|cost': "Sustain $99/mo · Restore $149/mo · Elite $199/mo. All include weekly visits!",
+        'hello|hi|hey': "Hey! How can The Hometown Chiropractor help you today? 😊",
+        'dry needling|needle': "Yes! We offer dry needling for chronic pain and muscle tension relief. 📌",
+        'phone|contact': "Call (270) 227-5563 or email chiromotionspine@icloud.com 📞"
+      },
+      fallback: "Call us at (270) 227-5563 or book online at thehometownchiro.janeapp.com!"
     });
   });
 </script>
