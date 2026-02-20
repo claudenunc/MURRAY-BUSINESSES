@@ -3,39 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AI-powered solutions for Alex's Family Pharmacy by FooLiSHNeSS eNVy. Custom chatbots, automated refills, digital intake forms, and more." />
-  <title>AI Solutions for Alex's Pharmacy | FooLiSHNeSS eNVy</title>
+  <meta name="description" content="AI-powered digital solutions tailored for Alex's Family Pharmacy by FooLiSHNeSS eNVy. Custom chatbots, automated refills, SMS alerts, and a premium website." />
+  <title>AI Solutions for Alex's Family Pharmacy | FooLiSHNeSS eNVy</title>
   <link rel="stylesheet" href="../shared/styles.css" />
   <style>
     :root {
-      --primary: #2563eb;
-      --primary-light: #60a5fa;
-      --primary-dark: #1d4ed8;
-      --primary-glow: rgba(37, 99, 235, 0.4);
+      --primary: #1e6bb3;
+      --primary-light: #4a9ede;
+      --primary-dark: #164e80;
+      --primary-glow: rgba(30, 107, 179, 0.4);
     }
-    .roi-card {
-      background: linear-gradient(135deg, rgba(6,214,160,0.1), rgba(37,99,235,0.05));
-      border: 1px solid rgba(6,214,160,0.2);
-      border-radius: var(--radius-xl);
-      padding: var(--space-2xl);
-      text-align: center;
-    }
-    .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: var(--space-lg); margin-top: var(--space-xl); }
+    .envy-brand { font-family: var(--font-heading); }
+    .envy-brand .foolishness { font-weight: 400; letter-spacing: 1px; }
+    .envy-brand .envy { font-weight: 800; background: linear-gradient(135deg, var(--primary-light), var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .roi-card { background: linear-gradient(135deg, rgba(6,214,160,0.08), rgba(30,107,179,0.05)); border: 1px solid rgba(6,214,160,0.2); border-radius: var(--radius-xl); padding: var(--space-2xl); text-align: center; }
+    .roi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: var(--space-lg); margin-top: var(--space-xl); }
     .roi-item .number { font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--accent); }
     .roi-item .label { font-size: 0.85rem; color: var(--text-muted); margin-top: var(--space-xs); }
+    .problem-card { background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.15); border-radius: var(--radius-lg); padding: var(--space-xl); }
+    .problem-card h4 { color: #f87171; }
+    .solution-card { background: rgba(6,214,160,0.06); border: 1px solid rgba(6,214,160,0.15); border-radius: var(--radius-lg); padding: var(--space-xl); }
+    .solution-card h4 { color: var(--accent); }
     .process-timeline { position: relative; padding-left: 40px; }
     .process-timeline::before { content:''; position:absolute; left:15px; top:0; bottom:0; width:2px; background:var(--border); }
     .timeline-step { position: relative; margin-bottom: var(--space-2xl); }
     .timeline-step::before { content:attr(data-step); position:absolute; left:-40px; width:30px; height:30px; border-radius:50%; background:linear-gradient(135deg,var(--primary),var(--accent)); color:white; display:flex; align-items:center; justify-content:center; font-size:0.8rem; font-weight:700; line-height:30px; text-align:center; }
     .timeline-step h4 { margin-bottom: var(--space-xs); }
     .timeline-step p { color: var(--text-secondary); font-size: 0.9rem; }
-    .envy-brand { font-family: var(--font-heading); }
-    .envy-brand .foolishness { font-weight: 400; letter-spacing: 1px; }
-    .envy-brand .envy { font-weight: 800; background: linear-gradient(135deg, var(--primary-light), var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
     .comparison-table { width:100%; border-collapse:collapse; margin-top:var(--space-xl); }
     .comparison-table th, .comparison-table td { padding: var(--space-md) var(--space-lg); text-align:left; border-bottom:1px solid var(--border); font-size:0.9rem; }
     .comparison-table th { color:var(--text-muted); font-size:0.75rem; text-transform:uppercase; letter-spacing:1px; }
-    .comparison-table td:first-child { color:var(--text-secondary); }
     .check { color:var(--accent); font-weight:700; }
     .cross { color:var(--text-muted); opacity:0.4; }
   </style>
@@ -45,16 +42,16 @@
 <!-- ══════ Navigation ══════ -->
 <nav class="navbar">
   <div class="container">
-    <a href="index.html" class="nav-brand">
-      <span class="brand-icon">💊</span>
-      Alex's Pharmacy
+    <a href="#top" class="nav-brand">
+      <span class="brand-icon" style="background:linear-gradient(135deg,#7c3aed,#06d6a0)">⚡</span>
+      <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Demo Site</a></li>
+      <li><a href="index.html">← View Demo Site</a></li>
+      <li><a href="#problem">The Problem</a></li>
       <li><a href="#solutions">Solutions</a></li>
       <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#contact-us" class="nav-cta">Get Started</a></li>
+      <li><a href="#contact-us" class="nav-cta">Let's Talk</a></li>
     </ul>
     <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
   </div>
@@ -71,26 +68,62 @@
     <div class="hero-content">
       <div class="hero-badge">
         <span class="pulse"></span>
-        Proposal for Alex's Family Pharmacy
+        Custom Proposal for Alex's Family Pharmacy
       </div>
-      <h1>Transform Your Pharmacy with <span class="gradient-text">Intelligent Automation</span></h1>
-      <p class="subtitle">We build AI-powered digital experiences that reduce your front-desk workload, capture more customers online, and run your pharmacy operations on autopilot — so you can focus on patient care.</p>
+      <h1>Alex's Pharmacy Deserves <span class="gradient-text">The Same Digital Edge</span> as the Chains</h1>
+      <p class="subtitle">You already beat CVS and Walgreens on care. Let us help you beat them online too. We build AI-powered digital experiences that bring new customers to your counter and keep existing patients coming back — automatically.</p>
       <div class="hero-actions">
         <a href="#pricing" class="btn btn-primary btn-lg">View Pricing 💰</a>
-        <a href="#solutions" class="btn btn-secondary btn-lg">See What We Build</a>
+        <a href="index.html" class="btn btn-secondary btn-lg">See Your Demo Site →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ The Problem ══════ -->
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">The Challenge</span>
+      <h2>What's Happening <span class="gradient-text">Right Now</span></h2>
+      <p class="subtitle">Alex's Family Pharmacy has a 4.7-star rating and 40 glowing reviews — but today, someone in Murray searching "pharmacy near me" might never find you.</p>
+    </div>
+    <div class="grid grid-2 animate-in">
+      <div class="problem-card">
+        <h4>🚫 Without a Website</h4>
+        <ul style="margin-top:var(--space-md);color:var(--text-secondary);font-size:0.9rem;list-style:none;display:flex;flex-direction:column;gap:var(--space-sm)">
+          <li>• Patients find CVS/Walgreens first in Google search</li>
+          <li>• New Murray State students don't know you exist</li>
+          <li>• No way to request refills after hours</li>
+          <li>• Phone is the ONLY way to reach you</li>
+          <li>• Your 4.7★ reviews & great services are hidden</li>
+          <li>• Competitors control your online narrative</li>
+        </ul>
+      </div>
+      <div class="solution-card">
+        <h4>✅ With FooLiSHNeSS eNVy</h4>
+        <ul style="margin-top:var(--space-md);color:var(--text-secondary);font-size:0.9rem;list-style:none;display:flex;flex-direction:column;gap:var(--space-sm)">
+          <li>• Rank #1 for "pharmacy Murray KY" on Google</li>
+          <li>• Capture Murray State students searching online</li>
+          <li>• 24/7 AI chatbot handles refills & questions</li>
+          <li>• Digital refill forms reduce phone calls 40%+</li>
+          <li>• Your real reviews & services showcased beautifully</li>
+          <li>• YOU control your brand and customer experience</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ══════ Who We Are ══════ -->
-<section class="section">
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(30,107,179,0.04),transparent)">
   <div class="container">
     <div class="feature-row">
       <div class="animate-in">
         <span class="section-label">Who We Are</span>
         <h2>Meet <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span></h2>
-        <p class="subtitle" style="margin-bottom:var(--space-xl)">We're a Murray-based AI solutions studio led by <strong>Nathan Michel</strong>. We specialize in building premium digital experiences and intelligent automation for local businesses — not cookie-cutter templates, but real technology that works for <em>your</em> business.</p>
+        <p class="subtitle" style="margin-bottom:var(--space-xl)">We're a Murray-based AI solutions studio led by <strong>Nathan Michel</strong>. We don't build generic templates — we research your actual business, your real services, your real reviews, and build technology that feels like <em>you</em>.</p>
+        <p style="color:var(--text-secondary);font-size:0.95rem;margin-bottom:var(--space-xl)">That demo site you just saw? We built it using your real hours, your actual services (med sync, DME, drive-up window, delivery, vaccines), and your 4.7-star reputation. The AI chatbot already knows how to answer your patients' questions. That's the FooLiSHNeSS eNVy difference.</p>
         <div style="display:flex;flex-direction:column;gap:var(--space-sm)">
           <div class="contact-info-card">
             <div class="icon">👤</div>
@@ -102,23 +135,23 @@
           <div class="contact-info-card">
             <div class="icon">📧</div>
             <div>
-              <h4>Email</h4>
-              <p><a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a></p>
+              <h4>iamaienvy@gmail.com</h4>
+              <p><a href="mailto:iamaienvy@gmail.com">Send an email</a></p>
             </div>
           </div>
           <div class="contact-info-card">
             <div class="icon">📞</div>
             <div>
-              <h4>Phone</h4>
-              <p><a href="tel:2707090697">(270) 709-0697</a></p>
+              <h4>(270) 709-0697</h4>
+              <p><a href="tel:2707090697">Call or text anytime</a></p>
             </div>
           </div>
         </div>
       </div>
       <div class="animate-in delay-2">
         <div class="roi-card">
-          <h3 style="margin-bottom:var(--space-sm)">Projected Impact for Alex's Pharmacy</h3>
-          <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:var(--space-lg)">Based on similar pharmacy AI deployments</p>
+          <h3 style="margin-bottom:var(--space-sm)">Projected Impact</h3>
+          <p style="color:var(--text-muted);font-size:0.85rem;margin-bottom:var(--space-lg)">Based on similar independent pharmacy deployments</p>
           <div class="roi-grid">
             <div class="roi-item">
               <div class="number" data-count="40" data-suffix="%">0%</div>
@@ -126,15 +159,15 @@
             </div>
             <div class="roi-item">
               <div class="number" data-count="65" data-suffix="%">0%</div>
-              <div class="label">Faster Refill Requests</div>
+              <div class="label">Faster Refill Processing</div>
             </div>
             <div class="roi-item">
               <div class="number" data-count="30" data-suffix="%">0%</div>
-              <div class="label">More Online Traffic</div>
+              <div class="label">More Online Discovery</div>
             </div>
             <div class="roi-item">
-              <div class="number" data-count="20" data-suffix="+">0+</div>
-              <div class="label">Hours Saved / Month</div>
+              <div class="number" data-count="20" data-suffix="hrs">0hrs</div>
+              <div class="label">Staff Time Saved / Month</div>
             </div>
           </div>
         </div>
@@ -143,89 +176,35 @@
   </div>
 </section>
 
-<!-- ══════ Solutions ══════ -->
-<section class="section" id="solutions" style="background:linear-gradient(180deg,transparent,rgba(37,99,235,0.04),transparent)">
+<!-- ══════ What We'll Build ══════ -->
+<section class="section" id="solutions">
   <div class="container">
     <div class="section-header animate-in">
-      <span class="section-label">What We'll Build</span>
-      <h2>Your Custom <span class="gradient-text">AI Solution Stack</span></h2>
-      <p class="subtitle">Everything Alex's Pharmacy needs to compete with — and beat — the big chains, digitally.</p>
+      <span class="section-label">Your Solution</span>
+      <h2>What We Build <span class="gradient-text">For Alex's Pharmacy</span></h2>
+      <p class="subtitle">Everything you need to compete digitally — custom built for your specific business.</p>
     </div>
-    <div class="grid grid-2">
-      <div class="card animate-in delay-1">
+    <div class="grid grid-2 animate-in">
+      <div class="card">
         <div class="card-icon">🌐</div>
         <h3>Premium Website</h3>
-        <p>A fast, mobile-first, SEO-optimized website that ranks in local search, showcases your services, and builds trust before patients even walk in the door.</p>
+        <p>A fast, mobile-first, SEO-optimized site that ranks for "pharmacy Murray KY" and showcases your real services — med sync, DME, drive-up window, vaccines, delivery, and community events. No templates. Built for you.</p>
       </div>
-      <div class="card animate-in delay-2">
+      <div class="card">
         <div class="card-icon">🤖</div>
-        <h3>AI Prescription Chatbot</h3>
-        <p>A 24/7 virtual pharmacy assistant that handles refill requests, answers medication questions, checks hours, and routes complex inquiries to your staff.</p>
+        <h3>AI Pharmacy Chatbot</h3>
+        <p>A 24/7 virtual assistant that knows your services, hours, phone number, and can handle refill requests, answer insurance questions, and direct patients — all without your staff touching the phone.</p>
       </div>
-      <div class="card animate-in delay-3">
+      <div class="card">
         <div class="card-icon">📋</div>
-        <h3>Digital Intake & Refill Forms</h3>
-        <p>Smart, auto-validating forms that let customers submit refill requests, new patient info, and insurance details — all flowing directly to your workflow.</p>
+        <h3>Digital Refill Forms</h3>
+        <p>Smart, validated forms that let patients submit refill requests anytime — day or night. They choose in-store pickup, drive-up window, or free delivery. You get an organized queue instead of a ringing phone.</p>
       </div>
-      <div class="card animate-in delay-4">
+      <div class="card">
         <div class="card-icon">📱</div>
         <h3>SMS Notifications</h3>
-        <p>Automated text alerts when prescriptions are ready, refill reminders, and medication adherence nudges that keep patients engaged and on track.</p>
+        <p>Automated "Your prescription is ready" texts, refill reminders, and wellness event announcements. Keep patients engaged and reduce no-pickups.</p>
       </div>
-    </div>
-
-    <!-- Comparison -->
-    <div class="animate-in" style="margin-top:var(--space-3xl)">
-      <h3 style="text-align:center;margin-bottom:var(--space-sm)">How You'll Stack Up</h3>
-      <p style="text-align:center;color:var(--text-muted);font-size:0.9rem">After FooLiSHNeSS eNVy builds your new system</p>
-      <table class="comparison-table">
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>CVS / Walgreens</th>
-            <th>Alex's (Current)</th>
-            <th>Alex's (With Us)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Professional Website</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Online Refill Requests</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>AI Chatbot Support</td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>SMS Rx Notifications</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Personal Pharmacist Care</td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Free Local Delivery</td>
-            <td><span class="cross">✗</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </div>
 </section>
@@ -236,36 +215,33 @@
     <div class="section-header animate-in">
       <span class="section-label">Investment</span>
       <h2>Simple, Transparent <span class="gradient-text">Pricing</span></h2>
-      <p class="subtitle">One setup fee to build everything. Then choose a maintenance tier that fits your needs.</p>
+      <p class="subtitle">One setup fee to build everything. Then choose a maintenance tier that fits.</p>
     </div>
 
     <!-- Setup Fee -->
     <div class="setup-card animate-in">
-      <span class="section-label" style="margin-bottom:var(--space-md)">One-Time Setup</span>
-      <div class="price">$2,500</div>
-      <p style="color:var(--text-secondary);margin-top:var(--space-sm);font-size:0.95rem">Custom website + AI chatbot + digital forms + branding + deployment</p>
-      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">Includes everything shown in your demo site. Built in 2–3 weeks.</p>
+      <span class="section-label" style="margin-bottom:var(--space-md)">One-Time Setup Fee</span>
+      <div class="price" style="font-family:var(--font-heading);font-size:2.8rem;font-weight:800;background:linear-gradient(135deg,var(--primary-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">$2,500</div>
+      <p style="color:var(--text-secondary);margin-top:var(--space-sm);font-size:0.95rem">Custom website + AI chatbot + digital refill forms + branding + deployment</p>
+      <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">Everything shown in your demo. Built in 2–3 weeks. Includes 1 round of revisions.</p>
     </div>
 
     <!-- Monthly Tiers -->
     <div class="pricing-grid animate-in">
-      <!-- Starter -->
       <div class="pricing-card">
         <div class="tier-name">Starter</div>
         <div class="tier-desc">Essential maintenance & support</div>
         <div class="price">$149<span>/mo</span></div>
         <ul class="features-list">
-          <li>Website hosting & SSL</li>
-          <li>Basic AI chatbot (text only)</li>
-          <li>Monthly content updates (2)</li>
-          <li>Uptime monitoring</li>
-          <li>Email support</li>
-          <li>Monthly analytics report</li>
+          <li>Website hosting & SSL certificate</li>
+          <li>Basic AI chatbot (text responses)</li>
+          <li>2 content updates per month</li>
+          <li>Uptime monitoring & backups</li>
+          <li>Email support (48hr response)</li>
+          <li>Monthly traffic analytics</li>
         </ul>
         <a href="#contact-us" class="btn btn-secondary">Get Started</a>
       </div>
-
-      <!-- Growth -->
       <div class="pricing-card featured">
         <div class="tier-name">Growth</div>
         <div class="tier-desc">Full AI power + active optimization</div>
@@ -273,24 +249,22 @@
         <ul class="features-list">
           <li>Everything in Starter</li>
           <li>Advanced AI chatbot with learning</li>
-          <li>SMS notification integration</li>
-          <li>SEO optimization & updates</li>
+          <li>SMS prescription notifications</li>
+          <li>Google SEO optimization</li>
           <li>Weekly content updates</li>
-          <li>Analytics dashboard</li>
+          <li>Analytics dashboard access</li>
           <li>Priority support (24hr response)</li>
-          <li>Quarterly strategy review</li>
+          <li>Quarterly strategy review call</li>
         </ul>
-        <a href="#contact-us" class="btn btn-primary">Get Started</a>
+        <a href="#contact-us" class="btn btn-primary">Best Value →</a>
       </div>
-
-      <!-- Enterprise -->
       <div class="pricing-card">
         <div class="tier-name">Enterprise</div>
         <div class="tier-desc">Full-service digital partner</div>
         <div class="price">$499<span>/mo</span></div>
         <ul class="features-list">
           <li>Everything in Growth</li>
-          <li>AI voice assistant integration</li>
+          <li>AI voice assistant for phone</li>
           <li>Multi-channel automation</li>
           <li>Custom integrations & APIs</li>
           <li>Dedicated account manager</li>
@@ -301,6 +275,10 @@
         <a href="#contact-us" class="btn btn-secondary">Contact Us</a>
       </div>
     </div>
+
+    <div style="text-align:center;margin-top:var(--space-2xl)" class="animate-in">
+      <p style="color:var(--text-muted);font-size:0.85rem">All plans are month-to-month. No long-term contracts. Cancel anytime.</p>
+    </div>
   </div>
 </section>
 
@@ -310,50 +288,49 @@
     <div class="feature-row">
       <div class="animate-in">
         <span class="section-label">How It Works</span>
-        <h2>Our <span class="gradient-text">Process</span></h2>
-        <p class="subtitle" style="margin-bottom:var(--space-2xl)">From concept to launch in as little as 2 weeks.</p>
-        <div class="process-timeline">
+        <h2>From Handshake to <span class="gradient-text">Launch in 3 Weeks</span></h2>
+        <div class="process-timeline" style="margin-top:var(--space-2xl)">
           <div class="timeline-step" data-step="1">
-            <h4>Discovery Call</h4>
-            <p>We sit down (or hop on a call) to understand your operations, pain points, and goals. 30 minutes, no pressure.</p>
+            <h4>Free Discovery Call</h4>
+            <p>30 minutes. We learn about your operations, pain points, and goals. We'll share the demo site live. No pressure, no commitment.</p>
           </div>
           <div class="timeline-step" data-step="2">
             <h4>Strategy & Design</h4>
-            <p>We map your customer journey, design your website and AI chatbot flows, and present a proposal for your approval.</p>
+            <p>We present your custom proposal with wireframes, chatbot flow, and feature breakdown. You approve before we write a single line of code.</p>
           </div>
           <div class="timeline-step" data-step="3">
             <h4>Build & Test</h4>
-            <p>Our team builds your complete digital experience — website, chatbot, forms, integrations — and tests everything thoroughly.</p>
+            <p>We build your complete system — website, AI chatbot, forms, SMS — and test everything to ensure it works perfectly on every device.</p>
           </div>
           <div class="timeline-step" data-step="4">
             <h4>Launch & Train</h4>
-            <p>We deploy your site, train your team on the dashboard, and ensure everything runs smoothly from day one.</p>
+            <p>We deploy your new site, show you the dashboard, and make sure your team is comfortable with everything. Go live day one.</p>
           </div>
           <div class="timeline-step" data-step="5">
-            <h4>Ongoing Support</h4>
-            <p>Your chosen maintenance plan keeps everything updated, optimized, and evolving as your business grows.</p>
+            <h4>Ongoing Partnership</h4>
+            <p>Your monthly plan keeps everything updated, secure, and evolving. We're a phone call away when you need us.</p>
           </div>
         </div>
       </div>
       <div class="animate-in delay-2">
         <div class="card" style="padding:var(--space-3xl)">
-          <h3 style="margin-bottom:var(--space-xl)">Why Local Businesses Choose Us</h3>
-          <div style="display:flex;flex-direction:column;gap:var(--space-lg)">
+          <h3 style="margin-bottom:var(--space-xl)">Why Alex's Should Choose Us</h3>
+          <div style="display:flex;flex-direction:column;gap:var(--space-xl)">
             <div>
-              <h4 style="display:flex;align-items:center;gap:var(--space-sm)">🏠 We're Local</h4>
-              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Based in Murray. We understand the community, the market, and what works here.</p>
+              <h4>🏠 We're Murray Local</h4>
+              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Not some agency out of Nashville or Louisville. We live here. We shop here. We understand Murray.</p>
             </div>
             <div>
-              <h4 style="display:flex;align-items:center;gap:var(--space-sm)">🧠 AI-First</h4>
-              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">We don't just build websites — we build intelligent systems that save you time and money.</p>
+              <h4>🧠 AI That Actually Works</h4>
+              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Our chatbot already knows your hours, services, and how to handle refill requests. It's not a generic template — it's built for YOUR pharmacy.</p>
             </div>
             <div>
-              <h4 style="display:flex;align-items:center;gap:var(--space-sm)">💰 Honest Pricing</h4>
-              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">No hidden fees, no surprises. You know exactly what you're paying for and what you get.</p>
+              <h4>💰 Fair Pricing</h4>
+              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">$2,500 setup is less than one month of a full-time employee. The $149–$499/mo maintenance is less than a social media manager's weekly pay.</p>
             </div>
             <div>
-              <h4 style="display:flex;align-items:center;gap:var(--space-sm)">🤝 Partnership</h4>
-              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">We're not a vendor — we're your technology partner. Your success is our success.</p>
+              <h4>🤝 True Partnership</h4>
+              <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">We don't disappear after launch. We're your ongoing technology partner — your success is our success.</p>
             </div>
           </div>
         </div>
@@ -367,8 +344,8 @@
   <div class="container">
     <div class="section-header animate-in">
       <span class="section-label">Let's Talk</span>
-      <h2>Ready to <span class="gradient-text">Get Started?</span></h2>
-      <p class="subtitle">Reach out for a free 30-minute discovery call. No obligation — just a conversation about how AI can transform your pharmacy.</p>
+      <h2>Ready to <span class="gradient-text">Level Up?</span></h2>
+      <p class="subtitle">Free 30-minute discovery call. No obligation. We'll walk you through the demo live and answer every question.</p>
     </div>
     <div class="animate-in" style="max-width:600px;margin:0 auto">
       <div style="display:flex;flex-direction:column;gap:var(--space-md)">
@@ -382,7 +359,7 @@
         <div class="contact-info-card">
           <div class="icon">📧</div>
           <div>
-            <h4>Email</h4>
+            <h4>Email Us</h4>
             <p><a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a></p>
           </div>
         </div>
@@ -395,8 +372,8 @@
         </div>
       </div>
       <div style="text-align:center;margin-top:var(--space-2xl)">
-        <a href="mailto:iamaienvy@gmail.com?subject=AI%20Solutions%20for%20Alex's%20Pharmacy&body=Hi%20Nathan,%0A%0AI'm%20interested%20in%20learning%20more%20about%20AI%20solutions%20for%20Alex's%20Family%20Pharmacy.%0A%0A" class="btn btn-primary btn-lg">📧 Send Us an Email</a>
-        <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">Or call/text anytime at (270) 709-0697</p>
+        <a href="mailto:iamaienvy@gmail.com?subject=Alex's%20Pharmacy%20-%20AI%20Solutions%20Inquiry&body=Hi%20Nathan,%0A%0AI'm%20interested%20in%20learning%20more%20about%20AI-powered%20digital%20solutions%20for%20Alex's%20Family%20Pharmacy.%0A%0ABest%20time%20to%20chat:%20%0A%0AThanks!" class="btn btn-primary btn-lg">📧 Start the Conversation</a>
+        <p style="color:var(--text-muted);font-size:0.85rem;margin-top:var(--space-md)">Or call/text anytime: (270) 709-0697</p>
       </div>
     </div>
   </div>
@@ -407,7 +384,7 @@
   <div class="container">
     <div class="footer-bottom" style="border:none;padding-top:0">
       <span class="envy-brand"><span class="foolishness">FooLiSHNeSS</span> <span class="envy">eNVy</span></span>
-      <span>&copy; 2026 FooLiSHNeSS eNVy. All rights reserved.</span>
+      <span>&copy; 2026 FooLiSHNeSS eNVy · Murray, KY</span>
       <span><a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a> · <a href="tel:2707090697">(270) 709-0697</a></span>
     </div>
   </div>

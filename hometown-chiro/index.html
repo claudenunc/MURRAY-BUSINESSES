@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Hometown Chiropractor — Murray, KY. AI-powered scheduling, chiropractic adjustments, pain management, and wellness care. Book online instantly." />
+  <title>The Hometown Chiropractor | Murray, KY — AI-Powered Booking</title>
+  <link rel="stylesheet" href="../shared/styles.css" />
+  <style>
+    :root {
+      --primary: #0d9488;
+      --primary-light: #2dd4bf;
+      --primary-dark: #0f766e;
+      --primary-glow: rgba(13, 148, 136, 0.4);
+      --accent: #8b5cf6;
+      --accent-light: #a78bfa;
+      --accent-dark: #7c3aed;
+      --accent-glow: rgba(139, 92, 246, 0.3);
+    }
+    .service-tag {
+      display: inline-block;
+      padding: var(--space-xs) var(--space-md);
+      background: var(--bg-glass);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      font-size: 0.8rem;
+      color: var(--primary-light);
+      margin: 0 var(--space-xs) var(--space-xs) 0;
+    }
+    .insurance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+    .insurance-card {
+      background: var(--bg-glass);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      text-align: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all var(--transition-fast);
+    }
+    .insurance-card:hover {
+      border-color: var(--primary-light);
+      background: var(--bg-glass-strong);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════ Navigation ══════ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="nav-brand">
+      <span class="brand-icon">🦴</span>
+      The Hometown Chiropractor
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#ai-booking">AI Booking</a></li>
+      <li><a href="#insurance">Insurance</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="services.html" class="nav-cta">AI Solutions</a></li>
+    </ul>
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- ══════ Hero ══════ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        AI-Powered Scheduling
+      </div>
+      <h1>Align Your Body. <br><span class="gradient-text">Automate Your Schedule.</span></h1>
+      <p class="subtitle">Murray's trusted chiropractic care — now with an intelligent booking assistant that schedules your appointments, verifies insurance, and follows up automatically.</p>
+      <div class="hero-actions">
+        <a href="#ai-booking" class="btn btn-primary btn-lg">Book with AI Assistant 🤖</a>
+        <a href="tel:2702275563" class="btn btn-secondary btn-lg">📞 (270) 227-5563</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-number" data-count="2500" data-suffix="+">0+</div>
+          <div class="stat-label">Patients Treated</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number" data-count="4.9">0</div>
+          <div class="stat-label">★ Google Rating</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number" data-count="95" data-suffix="%">0%</div>
+          <div class="stat-label">Report Pain Relief</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Services ══════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Our Expertise</span>
+      <h2>Comprehensive <span class="gradient-text">Chiropractic Care</span></h2>
+      <p class="subtitle">From acute pain relief to long-term wellness, we offer personalized treatment plans that get you back to living your best life.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card animate-in delay-1">
+        <div class="card-icon">🦴</div>
+        <h3>Spinal Adjustments</h3>
+        <p>Precise, gentle adjustments to restore proper spinal alignment. Our techniques reduce nerve interference and promote natural healing.</p>
+        <div style="margin-top:var(--space-md)">
+          <span class="service-tag">Manual</span>
+          <span class="service-tag">Instrument</span>
+          <span class="service-tag">Activator</span>
+        </div>
+      </div>
+      <div class="card animate-in delay-2">
+        <div class="card-icon">💪</div>
+        <h3>Pain Management</h3>
+        <p>Effective, drug-free pain relief for back pain, neck pain, migraines, sciatica, and more. We treat the root cause, not just symptoms.</p>
+        <div style="margin-top:var(--space-md)">
+          <span class="service-tag">Back Pain</span>
+          <span class="service-tag">Neck</span>
+          <span class="service-tag">Sciatica</span>
+        </div>
+      </div>
+      <div class="card animate-in delay-3">
+        <div class="card-icon">🏃</div>
+        <h3>Sports Rehabilitation</h3>
+        <p>Get back in the game faster with targeted rehab programs. We work with athletes of all levels to restore function and prevent re-injury.</p>
+        <div style="margin-top:var(--space-md)">
+          <span class="service-tag">Athletes</span>
+          <span class="service-tag">Recovery</span>
+          <span class="service-tag">Prevention</span>
+        </div>
+      </div>
+      <div class="card animate-in delay-1">
+        <div class="card-icon">🧘</div>
+        <h3>Wellness Plans</h3>
+        <p>Proactive care packages for ongoing spinal health. Regular adjustments prevent problems before they start and keep you performing at your peak.</p>
+      </div>
+      <div class="card animate-in delay-2">
+        <div class="card-icon">🤕</div>
+        <h3>Auto Accident Injuries</h3>
+        <p>Whiplash, herniated discs, and soft tissue injuries from car accidents. We document everything for your insurance claim and guide your recovery.</p>
+      </div>
+      <div class="card animate-in delay-3">
+        <div class="card-icon">👶</div>
+        <h3>Pediatric & Prenatal</h3>
+        <p>Gentle, safe chiropractic care for children and expectant mothers. Specialized techniques adapted for growing bodies and pregnant patients.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ AI Booking Demo ══════ -->
+<section class="section ai-demo-section" id="ai-booking">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Try It Live</span>
+      <h2>Your AI <span class="gradient-text">Booking Assistant</span></h2>
+      <p class="subtitle">No more phone tag. Our intelligent assistant books your appointment, checks availability, and handles insurance verification — all in a natural conversation.</p>
+    </div>
+    <div class="ai-demo-container animate-in" id="chiro-chat-embed">
+      <!-- Chatbot embeds here -->
+    </div>
+    <div style="text-align:center;margin-top:var(--space-xl)" class="animate-in">
+      <p style="color:var(--text-muted);font-size:0.85rem">Try asking: "I need an appointment for back pain" or "What insurance do you accept?"</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ How AI Booking Works ══════ -->
+<section class="section">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">Smart Scheduling</span>
+        <h2>How AI Booking <span class="gradient-text">Works</span></h2>
+        <p class="subtitle" style="margin-bottom:var(--space-xl)">The old way: call, wait on hold, play phone tag, hope for a callback. The new way:</p>
+        <div style="display:flex;flex-direction:column;gap:var(--space-lg)">
+          <div class="card" style="padding:var(--space-lg)">
+            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">1️⃣ Patient Messages Anytime</h4>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Via chatbot on website, SMS, or social media — 24 hours a day.</p>
+          </div>
+          <div class="card" style="padding:var(--space-lg)">
+            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">2️⃣ AI Checks Availability</h4>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Instantly scans your calendar, finds open slots, and suggests best options.</p>
+          </div>
+          <div class="card" style="padding:var(--space-lg)">
+            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">3️⃣ Confirms & Sends Reminders</h4>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">Books the appointment, sends confirmation text, and reminds them 24 hours before.</p>
+          </div>
+          <div class="card" style="padding:var(--space-lg)">
+            <h4 style="display:flex;align-items:center;gap:var(--space-sm)">4️⃣ Auto Follow-Up</h4>
+            <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:var(--space-xs)">After the visit, AI checks in on recovery and suggests the next appointment.</p>
+          </div>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="card" style="text-align:center;padding:var(--space-3xl)">
+          <div style="font-size:4rem;margin-bottom:var(--space-lg)">📉</div>
+          <h3 style="margin-bottom:var(--space-md)">Reduce No-Shows by <span class="gradient-text">60%</span></h3>
+          <p style="color:var(--text-secondary);font-size:0.95rem">Automated reminders and easy rescheduling mean fewer empty chair slots and more revenue.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-lg);margin-top:var(--space-2xl)">
+            <div>
+              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--primary-light)" data-count="85" data-suffix="%">0%</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);margin-top:var(--space-xs)">Less Phone Time</div>
+            </div>
+            <div>
+              <div style="font-family:var(--font-heading);font-size:2rem;font-weight:800;color:var(--accent)" data-count="24" data-suffix="/7">0/7</div>
+              <div style="font-size:0.8rem;color:var(--text-muted);margin-top:var(--space-xs)">Booking Available</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Insurance ══════ -->
+<section class="section" id="insurance" style="background:linear-gradient(180deg,transparent,rgba(13,148,136,0.04),transparent)">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Coverage</span>
+      <h2>Insurance <span class="gradient-text">Accepted</span></h2>
+      <p class="subtitle">We accept most major insurance plans. Our AI can verify your coverage instantly.</p>
+    </div>
+    <div class="insurance-grid animate-in">
+      <div class="insurance-card">🛡️ Blue Cross Blue Shield</div>
+      <div class="insurance-card">🏥 Aetna</div>
+      <div class="insurance-card">💊 United Healthcare</div>
+      <div class="insurance-card">❤️ Medicare</div>
+      <div class="insurance-card">🌟 Humana</div>
+      <div class="insurance-card">📋 Cigna</div>
+      <div class="insurance-card">🤝 Workers' Comp</div>
+      <div class="insurance-card">💳 Self-Pay Available</div>
+    </div>
+    <div style="text-align:center;margin-top:var(--space-xl)" class="animate-in">
+      <p style="color:var(--text-muted);font-size:0.9rem">Don't see your plan? Ask our AI assistant or call us — we work with most providers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Testimonials ══════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Patient Stories</span>
+      <h2>What Murray <span class="gradient-text">Says About Us</span></h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="testimonial-card animate-in delay-1">
+        <div class="stars">★★★★★</div>
+        <blockquote>"I've been dealing with chronic back pain for years. After just 3 weeks of treatment here, I'm sleeping through the night again. Life-changing."</blockquote>
+        <div class="author">
+          <div class="author-avatar">KW</div>
+          <div class="author-info">
+            <div class="name">Karen W.</div>
+            <div class="role">Patient — 6 months</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-in delay-2">
+        <div class="stars">★★★★★</div>
+        <blockquote>"The AI booking was a game-changer. I texted at 10pm and had an appointment booked by the time I woke up. No waiting on hold!"</blockquote>
+        <div class="author">
+          <div class="author-avatar">MB</div>
+          <div class="author-info">
+            <div class="name">Mike B.</div>
+            <div class="role">New Patient</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-in delay-3">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Brought my daughter after a soccer injury. They were so gentle and thorough. She was back on the field in 2 weeks. Truly hometown care."</blockquote>
+        <div class="author">
+          <div class="author-avatar">LT</div>
+          <div class="author-info">
+            <div class="name">Lisa T.</div>
+            <div class="role">Parent</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Contact ══════ -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Visit Us</span>
+      <h2>The Hometown <span class="gradient-text">Chiropractor</span></h2>
+    </div>
+    <div class="contact-grid animate-in">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-md)">
+          <div class="contact-info-card">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>404 N 4th St, Suite C<br>Murray, KY 42071</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:2702275563">(270) 227-5563</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:chiromotionspine@icloud.com">chiromotionspine@icloud.com</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">🕐</div>
+            <div>
+              <h4>Hours</h4>
+              <table class="hours-table">
+                <tr><td>Mon, Wed, Fri</td><td>8:00 AM – 5:00 PM</td></tr>
+                <tr><td>Tue, Thu</td><td>10:00 AM – 6:00 PM</td></tr>
+                <tr><td>Sat – Sun</td><td>Closed</td></tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-88.32!3d36.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM3JzEyLjAiTiA4OMKwMTknMTIuMCJX!5e0!3m2!1sen!2sus!4v1!5m2!1sen!2sus" loading="lazy" title="Map to The Hometown Chiropractor"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Footer ══════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand" style="margin-bottom:var(--space-sm)">
+          <span class="brand-icon">🦴</span>
+          The Hometown Chiropractor
+        </div>
+        <p>Murray, Kentucky's trusted chiropractic practice — now with intelligent AI scheduling for seamless patient care.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#ai-booking">AI Booking</a></li>
+          <li><a href="#insurance">Insurance</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Spinal Adjustments</a></li>
+          <li><a href="#">Pain Management</a></li>
+          <li><a href="#">Sports Rehab</a></li>
+          <li><a href="#">Wellness Plans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>AI Solutions</h4>
+        <ul>
+          <li><a href="services.html">Our Services</a></li>
+          <li><a href="services.html#pricing">Pricing</a></li>
+          <li><a href="services.html#contact-us">Get Started</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 The Hometown Chiropractor. Demo by <a href="services.html">FooLiSHNeSS eNVy</a>.</span>
+      <span>Powered by <a href="services.html">FooLiSHNeSS eNVy</a> AI Solutions</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="../shared/animations.js"></script>
+<script src="../shared/chatbot.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Embedded booking assistant
+    createChiroChatbot({
+      containerId: 'chiro-chat-embed',
+      isFloating: false
+    });
+    // Floating widget
+    createChiroChatbot({
+      isFloating: true
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,481 +1,470 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Alex's Family Pharmacy — Murray, Kentucky's trusted independent pharmacy. Automated prescription refills, immunizations, compounding, and free local delivery."
-    />
-    <title>Alex's Family Pharmacy | Murray, KY — Powered by AI</title>
-    <link rel="stylesheet" href="../shared/styles.css" />
-    <style>
-      :root {
-        --primary: #2563eb;
-        --primary-light: #60a5fa;
-        --primary-dark: #1d4ed8;
-        --primary-glow: rgba(37, 99, 235, 0.4);
-        --accent: #06d6a0;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- ══════ Navigation ══════ -->
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="nav-brand">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex's Family Pharmacy — Murray, Kentucky's hometown independent pharmacy. Medication synchronization, durable medical equipment, immunizations, delivery, and drive-up window. Rated 4.7 stars." />
+  <title>Alex's Family Pharmacy | Murray, KY — Your Hometown Pharmacy</title>
+  <link rel="stylesheet" href="../shared/styles.css" />
+  <style>
+    :root {
+      --primary: #1e6bb3;
+      --primary-light: #4a9ede;
+      --primary-dark: #164e80;
+      --primary-glow: rgba(30, 107, 179, 0.4);
+      --accent: #06d6a0;
+    }
+    .review-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245,158,11,0.12);
+      border: 1px solid rgba(245,158,11,0.3);
+      padding: 6px 16px;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #fbbf24;
+    }
+    .feature-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      background: var(--bg-glass);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      transition: all var(--transition-fast);
+    }
+    .feature-chip:hover {
+      border-color: var(--primary-light);
+      color: var(--primary-light);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════ Navigation ══════ -->
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="nav-brand">
+      <span class="brand-icon">💊</span>
+      Alex's Family Pharmacy
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#ai-demo">AI Assistant</a></li>
+      <li><a href="#refill">Refill Rx</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="services.html" class="nav-cta">AI Solutions</a></li>
+    </ul>
+    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<!-- ══════ Hero ══════ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Independent · Hometown-Owned · Murray, KY
+      </div>
+      <h1>Your Hometown Pharmacy, <br><span class="gradient-text">Powered by Modern Care</span></h1>
+      <p class="subtitle">More than just prescriptions — personalized medication management, immunizations, durable medical equipment, free delivery, and a drive-up window. All backed by the attentive, one-on-one care that only an independent pharmacy can provide.</p>
+      <div class="hero-actions">
+        <a href="#ai-demo" class="btn btn-primary btn-lg">Chat With Our AI Assistant ✨</a>
+        <a href="#refill" class="btn btn-secondary btn-lg">Refill a Prescription</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="stat-number"><span style="color:#fbbf24">★</span> 4.7</div>
+          <div class="stat-label">Google Rating (40 Reviews)</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number">Mon–Sat</div>
+          <div class="stat-label">Open 6 Days a Week</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-number">Free</div>
+          <div class="stat-label">Local Delivery</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Services ══════ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">What We Offer</span>
+      <h2>Pharmacy Services <span class="gradient-text">You Can Count On</span></h2>
+      <p class="subtitle">From your daily medications to specialty care, Alex's Family Pharmacy delivers personalized, attentive healthcare right here in Murray.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card animate-in delay-1">
+        <div class="card-icon">💊</div>
+        <h3>Prescription Services</h3>
+        <p>Fast, accurate fills with personal consultation on every prescription. We take the time to explain usage, dosage, side effects, and drug interactions so you understand your medications completely.</p>
+      </div>
+      <div class="card animate-in delay-2">
+        <div class="card-icon">🔄</div>
+        <h3>Medication Synchronization</h3>
+        <p>Tired of multiple pharmacy trips each month? Our med sync program aligns all your prescription refill dates to a single convenient pickup day — saving you time and ensuring you never miss a dose.</p>
+      </div>
+      <div class="card animate-in delay-3">
+        <div class="card-icon">💉</div>
+        <h3>Immunizations</h3>
+        <p>Walk-in vaccinations available — flu, COVID-19, shingles, pneumonia, and more. Our trained pharmacists administer vaccines on the spot with no appointment required.</p>
+      </div>
+      <div class="card animate-in delay-1">
+        <div class="card-icon">🦽</div>
+        <h3>Durable Medical Equipment</h3>
+        <p>Wheelchairs, walkers, canes, braces, and home medical supplies. We help you find the right equipment and can assist with insurance billing for covered DME items.</p>
+      </div>
+      <div class="card animate-in delay-2">
+        <div class="card-icon">🚗</div>
+        <h3>Drive-Up Window & Delivery</h3>
+        <p>Don't even have to get out of your car — use our convenient drive-up window. Or let us bring it to you with free local delivery anywhere in Murray.</p>
+      </div>
+      <div class="card animate-in delay-3">
+        <div class="card-icon">📋</div>
+        <h3>Health & Wellness Events</h3>
+        <p>We host regular vaccine clinics, health screenings, and educational workshops in collaboration with local healthcare providers. Because community health is more than just filling bottles.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:var(--space-2xl)" class="animate-in">
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:var(--space-sm)">
+        <span class="feature-chip">♿ Handicapped Accessible</span>
+        <span class="feature-chip">🚗 Drive-Up Window</span>
+        <span class="feature-chip">🚚 Free Local Delivery</span>
+        <span class="feature-chip">💉 Walk-In Vaccines</span>
+        <span class="feature-chip">🦽 DME Supplies</span>
+        <span class="feature-chip">💳 Most Insurance Accepted</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Why Independent ══════ -->
+<section class="section" style="background:linear-gradient(180deg,transparent,rgba(30,107,179,0.04),transparent)">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">The Difference</span>
+        <h2>Why Patients Choose <span class="gradient-text">Alex's Over the Chains</span></h2>
+        <p class="subtitle" style="margin-bottom:var(--space-xl)">Our neighbors trust us with their health — and they have for years. Here's what they say:</p>
+        <div class="review-badge" style="margin-bottom:var(--space-xl)">★ 4.7 / 5 — 40 Google Reviews</div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-lg)">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"The staff is incredibly efficient, knowledgeable, and friendly. They take the time to explain everything about my medications. You just don't get that at the chain pharmacies."</blockquote>
+            <div class="author">
+              <div class="author-avatar">MK</div>
+              <div class="author-info">
+                <div class="name">Murray Customer</div>
+                <div class="role">Verified Google Review</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Outstanding service every single time. They know my name, they know my prescriptions, and they genuinely care. This is what a pharmacy should be."</blockquote>
+            <div class="author">
+              <div class="author-avatar">LC</div>
+              <div class="author-info">
+                <div class="name">Local Patient</div>
+                <div class="role">Verified Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="card" style="padding:var(--space-3xl)">
+          <h3 style="margin-bottom:var(--space-xl)">Chain Pharmacy vs. Alex's</h3>
+          <table class="hours-table" style="width:100%">
+            <tr style="border-bottom:2px solid var(--border)">
+              <td style="font-weight:700;color:var(--text-primary)">Feature</td>
+              <td style="text-align:center;font-weight:700;color:var(--text-muted);font-size:0.8rem">CVS / Walgreens</td>
+              <td style="text-align:center;font-weight:700;color:var(--accent);font-size:0.8rem">Alex's</td>
+            </tr>
+            <tr><td>Know Your Name</td><td style="text-align:center;opacity:0.4">✗</td><td style="text-align:center;color:var(--accent)">✓</td></tr>
+            <tr><td>Medication Counseling</td><td style="text-align:center;opacity:0.4">Rushed</td><td style="text-align:center;color:var(--accent)">✓ Thorough</td></tr>
+            <tr><td>Drive-Up Window</td><td style="text-align:center;opacity:0.4">Some</td><td style="text-align:center;color:var(--accent)">✓</td></tr>
+            <tr><td>Free Delivery</td><td style="text-align:center;opacity:0.4">✗ / $$$</td><td style="text-align:center;color:var(--accent)">✓ Free</td></tr>
+            <tr><td>Med Synchronization</td><td style="text-align:center;opacity:0.4">✗</td><td style="text-align:center;color:var(--accent)">✓</td></tr>
+            <tr><td>Durable Medical Equip.</td><td style="text-align:center;opacity:0.4">✗</td><td style="text-align:center;color:var(--accent)">✓</td></tr>
+            <tr><td>Community Events</td><td style="text-align:center;opacity:0.4">✗</td><td style="text-align:center;color:var(--accent)">✓</td></tr>
+            <tr><td>Wait Time</td><td style="text-align:center;opacity:0.4">30-60 min</td><td style="text-align:center;color:var(--accent)">Minimal</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ AI Demo ══════ -->
+<section class="section ai-demo-section" id="ai-demo">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Try It Live</span>
+      <h2>Meet Your <span class="gradient-text">Pharmacy AI Assistant</span></h2>
+      <p class="subtitle">Imagine your customers getting instant answers about prescriptions, hours, services, and refills — 24/7, without a single phone call. Try it yourself:</p>
+    </div>
+    <div class="ai-demo-container animate-in" id="pharmacy-chat-embed">
+      <!-- Chatbot embeds here -->
+    </div>
+    <div style="text-align:center;margin-top:var(--space-xl)" class="animate-in">
+      <p style="color:var(--text-muted);font-size:0.85rem">Try: "Can I get a refill?" · "Do you deliver?" · "What are your hours?" · "Do you have flu shots?"</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Digital Intake / Refill Form ══════ -->
+<section class="section" id="refill">
+  <div class="container">
+    <div class="feature-row">
+      <div class="animate-in">
+        <span class="section-label">Smart Forms</span>
+        <h2>Digital Prescription <span class="gradient-text">Refill Request</span></h2>
+        <p class="subtitle" style="margin-bottom:var(--space-xl)">No more waiting on hold. Submit your refill request in 60 seconds and we'll text you when it's ready for pickup, drive-up, or delivery.</p>
+        <div style="display:flex;gap:var(--space-md);flex-wrap:wrap">
+          <span class="feature-chip">⚡ Instant Submission</span>
+          <span class="feature-chip">📱 SMS Ready Alert</span>
+          <span class="feature-chip">🔒 HIPAA Secure</span>
+          <span class="feature-chip">🚗 Drive-Up or Delivery</span>
+        </div>
+      </div>
+      <div class="animate-in delay-2">
+        <div class="intake-form">
+          <h3 style="margin-bottom:var(--space-xl);font-size:1.1rem">📋 Request a Refill</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" placeholder="Jane" />
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" placeholder="Smith" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="(270) 555-0123" />
+          </div>
+          <div class="form-group">
+            <label>Prescription Number (Rx #)</label>
+            <input type="text" placeholder="RX-123456" />
+          </div>
+          <div class="form-group">
+            <label>Medication Name</label>
+            <input type="text" placeholder="e.g., Metformin 500mg" />
+          </div>
+          <div class="form-group">
+            <label>Preferred Pickup Method</label>
+            <select>
+              <option>In-Store Pickup</option>
+              <option>Drive-Up Window</option>
+              <option>Free Local Delivery</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Notes (Optional)</label>
+            <textarea rows="2" placeholder="Any special requests or questions..."></textarea>
+          </div>
+          <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:var(--space-md)" onclick="this.textContent='✓ Refill Request Submitted!';this.style.background='linear-gradient(135deg, var(--accent), var(--accent-dark))';setTimeout(()=>{this.textContent='Submit Refill Request';this.style.background='';},3000)">Submit Refill Request</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Contact ══════ -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-header animate-in">
+      <span class="section-label">Visit Us</span>
+      <h2>Alex's Family <span class="gradient-text">Pharmacy</span></h2>
+      <p class="subtitle">Serving Murray, Kentucky with personalized, attentive care.</p>
+    </div>
+    <div class="contact-grid animate-in">
+      <div>
+        <div style="display:flex;flex-direction:column;gap:var(--space-md)">
+          <div class="contact-info-card">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>801 Paramount Drive<br>Murray, KY 42071</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:2709171424">(270) 917-1424</a></p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">📠</div>
+            <div>
+              <h4>Fax</h4>
+              <p>(270) 917-1421</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">🕐</div>
+            <div>
+              <h4>Hours of Operation</h4>
+              <table class="hours-table">
+                <tr><td>Monday – Friday</td><td>9:00 AM – 6:00 PM</td></tr>
+                <tr><td>Saturday</td><td>9:00 AM – 12:00 PM</td></tr>
+                <tr><td>Sunday</td><td>Closed</td></tr>
+              </table>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="icon">♿</div>
+            <div>
+              <h4>Accessibility</h4>
+              <p>Handicapped accessible · Drive-up window available</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-88.32!3d36.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM2JzM2LjAiTiA4OMKwMTknMTIuMCJX!5e0!3m2!1sen!2sus!4v1!5m2!1sen!2sus" loading="lazy" title="Alex's Family Pharmacy — 801 Paramount Drive, Murray, KY"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ Footer ══════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand" style="margin-bottom:var(--space-sm)">
           <span class="brand-icon">💊</span>
           Alex's Family Pharmacy
-        </a>
-        <ul class="nav-links">
+        </div>
+        <p>Murray, Kentucky's trusted independent hometown pharmacy — personalized care and modern convenience under one roof.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
           <li><a href="#services">Services</a></li>
-          <li><a href="#ai-demo">AI Assistant</a></li>
           <li><a href="#refill">Refill Rx</a></li>
+          <li><a href="#ai-demo">AI Assistant</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="services.html" class="nav-cta">Our AI Solutions</a></li>
         </ul>
-        <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
       </div>
-    </nav>
-
-    <!-- ══════ Hero ══════ -->
-    <section class="hero" id="home">
-      <div class="hero-bg">
-        <div class="gradient-orb orb-1"></div>
-        <div class="gradient-orb orb-2"></div>
-        <div class="gradient-orb orb-3"></div>
-        <div class="grid-overlay"></div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Prescriptions</a></li>
+          <li><a href="#services">Med Synchronization</a></li>
+          <li><a href="#services">Immunizations</a></li>
+          <li><a href="#services">Medical Equipment</a></li>
+          <li><a href="#services">Delivery</a></li>
+        </ul>
       </div>
-      <div class="container">
-        <div class="hero-content">
-          <div class="hero-badge">
-            <span class="pulse"></span>
-            AI-Powered Pharmacy Experience
-          </div>
-          <h1>
-            Your Neighborhood Pharmacy, <br /><span class="gradient-text"
-              >Powered by Tomorrow's Technology</span
-            >
-          </h1>
-          <p class="subtitle">
-            Experience the warmth of a family pharmacy combined with
-            cutting-edge AI — automated refills, instant medication support, and
-            personalized care, all at your fingertips.
-          </p>
-          <div class="hero-actions">
-            <a href="#ai-demo" class="btn btn-primary btn-lg"
-              >Try Our AI Assistant ✨</a
-            >
-            <a href="#refill" class="btn btn-secondary btn-lg"
-              >Refill Prescription</a
-            >
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="stat-number" data-count="15" data-suffix="+">0+</div>
-              <div class="stat-label">Years Serving Murray</div>
-            </div>
-            <div class="hero-stat">
-              <div class="stat-number" data-count="5000" data-suffix="+">
-                0+
-              </div>
-              <div class="stat-label">Prescriptions Filled</div>
-            </div>
-            <div class="hero-stat">
-              <div class="stat-number" data-count="98" data-suffix="%">0%</div>
-              <div class="stat-label">Customer Satisfaction</div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:2709171424">(270) 917-1424</a></li>
+          <li><a href="#">Fax: (270) 917-1421</a></li>
+          <li><a href="#contact">Directions</a></li>
+        </ul>
       </div>
-    </section>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Alex's Family Pharmacy · 801 Paramount Dr, Murray, KY 42071</span>
+      <span>Demo by <a href="services.html">FooLiSHNeSS eNVy</a> · <a href="mailto:iamaienvy@gmail.com">iamaienvy@gmail.com</a></span>
+    </div>
+  </div>
+</footer>
 
-    <!-- ══════ Services ══════ -->
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-header animate-in">
-          <span class="section-label">What We Do</span>
-          <h2>Complete Pharmacy <span class="gradient-text">Services</span></h2>
-          <p class="subtitle">
-            From everyday prescriptions to specialized compounding, we're your
-            one-stop healthcare partner in Murray.
-          </p>
-        </div>
-        <div class="grid grid-3">
-          <div class="card animate-in delay-1">
-            <div class="card-icon">📋</div>
-            <h3>Prescription Refills</h3>
-            <p>
-              Quick, hassle-free refills. Use our AI assistant to request
-              refills 24/7 — no hold times, no phone trees. Just type and go.
-            </p>
-          </div>
-          <div class="card animate-in delay-2">
-            <div class="card-icon">🧪</div>
-            <h3>Custom Compounding</h3>
-            <p>
-              Personalized medications tailored to your needs. Our pharmacists
-              create custom formulations in collaboration with your physician.
-            </p>
-          </div>
-          <div class="card animate-in delay-3">
-            <div class="card-icon">💉</div>
-            <h3>Immunizations</h3>
-            <p>
-              Walk-in flu shots, COVID-19 boosters, shingles, pneumonia, and
-              more. No appointment needed — AI handles scheduling if you prefer.
-            </p>
-          </div>
-          <div class="card animate-in delay-1">
-            <div class="card-icon">🚗</div>
-            <h3>Free Local Delivery</h3>
-            <p>
-              Can't make it in? We deliver free within Murray. Orders before 2
-              PM ship same day. Track your delivery in real time.
-            </p>
-          </div>
-          <div class="card animate-in delay-2">
-            <div class="card-icon">❤️</div>
-            <h3>Health Screenings</h3>
-            <p>
-              Blood pressure, glucose, cholesterol — walk-in health screenings
-              with instant results and personalized recommendations.
-            </p>
-          </div>
-          <div class="card animate-in delay-3">
-            <div class="card-icon">🤝</div>
-            <h3>Insurance Assistance</h3>
-            <p>
-              Confused by coverage? Our AI helps verify your insurance in
-              seconds, and our team finds the most affordable options for your
-              medications.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Scripts -->
+<script src="../shared/animations.js"></script>
+<script src="../shared/chatbot.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Embedded chatbot with REAL Alex's Pharmacy data
+    new AIChatbot({
+      containerId: 'pharmacy-chat-embed',
+      isFloating: false,
+      name: "Alex's Pharmacy Assistant",
+      avatar: '💊',
+      greeting: "Welcome to Alex's Family Pharmacy! 👋 I'm here to help with prescription refills, medication questions, hours, delivery, or any of our services. How can I help you today?",
+      responses: {
+        'refill|prescription|medication|rx|medicine|fill':
+          "I'd be happy to help with your refill! You can submit a request right on this page using our digital refill form, or give us the Rx number and medication name here and we'll get it started. You can pick up in-store, use our drive-up window, or get free delivery! 📋",
+        'hours|open|close|when|time':
+          "We're open Monday through Friday, 9:00 AM to 6:00 PM, and Saturday 9:00 AM to 12:00 PM. We're closed on Sundays. Need anything else? 🕐",
+        'delivery|deliver|ship|bring':
+          "Yes! We offer FREE local delivery anywhere in Murray. Just let us know when you submit your refill and we'll bring it right to you. 🚚",
+        'drive|window|drive-up|drive up|pickup':
+          "Absolutely! We have a convenient drive-up window so you don't even have to leave your car. Just pull up and we'll have your prescription ready. 🚗",
+        'insurance|coverage|accept|plan|copay':
+          "We accept most major insurance plans. We also participate in the RxLess Assurance Plan for additional discounts on medications. Bring your insurance card and we'll verify your coverage right away!",
+        'vaccine|immunization|flu|shot|covid|shingles':
+          "Yes, we offer walk-in immunizations! Flu shots, COVID-19 boosters, shingles, pneumonia, and more — no appointment needed. Our pharmacists are certified to administer vaccines on the spot. 💉",
+        'equipment|dme|wheelchair|walker|cane|brace|medical supply|supplies':
+          "We carry durable medical equipment including wheelchairs, walkers, canes, braces, and home medical supplies. We can also help with insurance billing for covered DME items. Stop by or call us at (270) 917-1424! 🦽",
+        'sync|synchronization|synchronize|align|one day':
+          "Our medication synchronization program is great for patients on multiple prescriptions! We align all your refill dates to a single pickup day each month, so you only need to make one trip. Ask us to set it up! 🔄",
+        'transfer|switch|move|another pharmacy':
+          "Transferring to Alex's is easy! Just give us your current pharmacy name and prescription numbers, and we'll handle the entire transfer. Usually takes less than 24 hours.",
+        'compound|compounding|custom|special':
+          "For compounding needs, we work with local providers to help coordinate specialized medications. Give us a call at (270) 917-1424 to discuss your specific needs.",
+        'cost|price|how much|expensive|cheap|affordable|discount':
+          "We work hard to keep prices competitive. We accept most insurance plans and also offer the RxLess discount program. Many generics are very affordable — call us at (270) 917-1424 with your medication name and we'll give you a price right away.",
+        'event|clinic|workshop|screening|community':
+          "We regularly host health and wellness events, vaccine clinics, and educational workshops with local healthcare providers. Follow us for announcements on upcoming community events! 📋",
+        'address|where|located|location|find|directions':
+          "We're located at 801 Paramount Drive, Murray, KY 42071. We're handicapped accessible with easy parking. Come see us! 📍",
+        'phone|call|number|contact|reach|fax':
+          "You can reach us at (270) 917-1424. Our fax number is (270) 917-1421. We're happy to help over the phone anytime during business hours! 📞",
+        'hello|hi|hey|good morning|good afternoon':
+          "Hey there! Welcome to Alex's Family Pharmacy. 😊 How can I help you today? I can assist with refills, hours, delivery, vaccines, or anything else!",
+        'thank|thanks|appreciate':
+          "You're very welcome! That's what we're here for. Is there anything else I can help with? We appreciate you choosing Alex's! 💜",
+        'review|rating|good|recommend':
+          "We're proud of our 4.7-star rating from 40 Google reviews! Our Murray neighbors appreciate our personalized care and that's what drives us every day. Thank you for your support! ⭐"
+      },
+      fallback: "Great question! For the most detailed answer, please call us at (270) 917-1424 or stop by at 801 Paramount Drive, Murray. We're open Mon-Fri 9-6 and Sat 9-12. Is there anything else I can help with?"
+    });
 
-    <!-- ══════ AI Demo ══════ -->
-    <section class="section ai-demo-section" id="ai-demo">
-      <div class="container">
-        <div class="section-header animate-in">
-          <span class="section-label">Try It Live</span>
-          <h2>
-            Meet Your AI <span class="gradient-text">Pharmacy Assistant</span>
-          </h2>
-          <p class="subtitle">
-            This is what your customers will experience — an intelligent,
-            always-available assistant that handles refills, answers questions,
-            and provides instant support.
-          </p>
-        </div>
-        <div class="ai-demo-container animate-in" id="pharmacy-chat-embed">
-          <!-- Chatbot embeds here -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════ Digital Intake Form ══════ -->
-    <section class="section" id="refill">
-      <div class="container">
-        <div class="feature-row">
-          <div class="animate-in">
-            <span class="section-label">Smart Forms</span>
-            <h2>
-              Digital Prescription
-              <span class="gradient-text">Refill Request</span>
-            </h2>
-            <p class="subtitle" style="margin-bottom: var(--space-xl)">
-              No more waiting on hold. Submit your refill request digitally and
-              receive a confirmation text when it's ready for pickup or
-              delivery.
-            </p>
-            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap">
-              <div
-                class="card-glass"
-                style="
-                  padding: var(--space-md) var(--space-lg);
-                  border-radius: var(--radius-full);
-                  font-size: 0.85rem;
-                  border: 1px solid var(--border);
-                "
-              >
-                ⚡ Instant Submission
-              </div>
-              <div
-                class="card-glass"
-                style="
-                  padding: var(--space-md) var(--space-lg);
-                  border-radius: var(--radius-full);
-                  font-size: 0.85rem;
-                  border: 1px solid var(--border);
-                "
-              >
-                📱 SMS Confirmation
-              </div>
-              <div
-                class="card-glass"
-                style="
-                  padding: var(--space-md) var(--space-lg);
-                  border-radius: var(--radius-full);
-                  font-size: 0.85rem;
-                  border: 1px solid var(--border);
-                "
-              >
-                🔒 HIPAA Secure
-              </div>
-            </div>
-          </div>
-          <div class="animate-in delay-2">
-            <div class="intake-form">
-              <h3 style="margin-bottom: var(--space-xl); font-size: 1.1rem">
-                Request a Refill
-              </h3>
-              <div class="form-row">
-                <div class="form-group">
-                  <label>First Name</label>
-                  <input type="text" placeholder="John" />
-                </div>
-                <div class="form-group">
-                  <label>Last Name</label>
-                  <input type="text" placeholder="Doe" />
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Phone Number</label>
-                <input type="tel" placeholder="(270) 555-0123" />
-              </div>
-              <div class="form-group">
-                <label>Prescription Number (Rx #)</label>
-                <input type="text" placeholder="RX-123456" />
-              </div>
-              <div class="form-group">
-                <label>Medication Name</label>
-                <input type="text" placeholder="e.g., Lisinopril 10mg" />
-              </div>
-              <div class="form-group">
-                <label>Preferred Pickup</label>
-                <select>
-                  <option>In-Store Pickup</option>
-                  <option>Free Local Delivery</option>
-                </select>
-              </div>
-              <button
-                class="btn btn-primary"
-                style="
-                  width: 100%;
-                  justify-content: center;
-                  margin-top: var(--space-md);
-                "
-                onclick="
-                  this.textContent = '✓ Request Submitted!';
-                  this.style.background =
-                    'linear-gradient(135deg, var(--accent), var(--accent-dark))';
-                  setTimeout(() => {
-                    this.textContent = 'Submit Refill Request';
-                    this.style.background = '';
-                  }, 3000);
-                "
-              >
-                Submit Refill Request
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════ Why Alex's ══════ -->
-    <section
-      class="section"
-      style="
-        background: linear-gradient(
-          180deg,
-          transparent,
-          rgba(37, 99, 235, 0.04),
-          transparent
-        );
-      "
-    >
-      <div class="container">
-        <div class="section-header animate-in">
-          <span class="section-label">Why Choose Us</span>
-          <h2>The <span class="gradient-text">Independent Advantage</span></h2>
-          <p class="subtitle">
-            Big-chain convenience backed by small-town care and cutting-edge
-            technology.
-          </p>
-        </div>
-        <div class="grid grid-2">
-          <div class="testimonial-card animate-in delay-1">
-            <div class="stars">★★★★★</div>
-            <blockquote>
-              "Switched from CVS and haven't looked back. They actually know my
-              name, remember my medications, and the AI refill system is a game
-              changer."
-            </blockquote>
-            <div class="author">
-              <div class="author-avatar">SM</div>
-              <div class="author-info">
-                <div class="name">Sarah M.</div>
-                <div class="role">Murray Resident</div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-card animate-in delay-2">
-            <div class="stars">★★★★★</div>
-            <blockquote>
-              "Free delivery saved me during flu season when I couldn't leave
-              the house. And the pharmacist actually called to check on me.
-              That's service you can't replicate at a chain."
-            </blockquote>
-            <div class="author">
-              <div class="author-avatar">JR</div>
-              <div class="author-info">
-                <div class="name">James R.</div>
-                <div class="role">Calloway County</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════ Contact ══════ -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="section-header animate-in">
-          <span class="section-label">Find Us</span>
-          <h2>
-            Visit Alex's <span class="gradient-text">Family Pharmacy</span>
-          </h2>
-        </div>
-        <div class="contact-grid animate-in">
-          <div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                gap: var(--space-md);
-              "
-            >
-              <div class="contact-info-card">
-                <div class="icon">📍</div>
-                <div>
-                  <h4>Address</h4>
-                  <p>801 Paramount Drive<br />Murray, KY 42071</p>
-                </div>
-              </div>
-              <div class="contact-info-card">
-                <div class="icon">📞</div>
-                <div>
-                  <h4>Phone</h4>
-                  <p><a href="tel:2709171424">(270) 917-1424</a></p>
-                </div>
-              </div>
-              <div class="contact-info-card">
-                <div class="icon">🕐</div>
-                <div>
-                  <h4>Hours</h4>
-                  <table class="hours-table">
-                    <tr>
-                      <td>Monday – Friday</td>
-                      <td>9:00 AM – 6:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td>Saturday</td>
-                      <td>9:00 AM – 1:00 PM</td>
-                    </tr>
-                    <tr>
-                      <td>Sunday</td>
-                      <td>Closed</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contact-map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3138.5!2d-88.32!3d36.61!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDM2JzM2LjAiTiA4OMKwMTknMTIuMCJX!5e0!3m2!1sen!2sus!4v1!5m2!1sen!2sus"
-              loading="lazy"
-              title="Map to Alex's Family Pharmacy"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════ Footer ══════ -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand">
-            <div class="nav-brand" style="margin-bottom: var(--space-sm)">
-              <span class="brand-icon">💊</span>
-              Alex's Family Pharmacy
-            </div>
-            <p>
-              Murray, Kentucky's trusted independent pharmacy — now enhanced
-              with AI for faster, smarter healthcare.
-            </p>
-          </div>
-          <div>
-            <h4>Quick Links</h4>
-            <ul>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#refill">Refill Rx</a></li>
-              <li><a href="#ai-demo">AI Assistant</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Prescriptions</a></li>
-              <li><a href="#">Compounding</a></li>
-              <li><a href="#">Immunizations</a></li>
-              <li><a href="#">Delivery</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>AI Solutions</h4>
-            <ul>
-              <li><a href="services.html">Our Services</a></li>
-              <li><a href="services.html#pricing">Pricing</a></li>
-              <li><a href="services.html#contact-us">Get Started</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <span
-            >&copy; 2026 Alex's Family Pharmacy. Demo site by
-            <a href="services.html">FooLiSHNeSS eNVy</a>.</span
-          >
-          <span
-            >Powered by <a href="services.html">FooLiSHNeSS eNVy</a> AI
-            Solutions</span
-          >
-        </div>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../shared/animations.js"></script>
-    <script src="../shared/chatbot.js"></script>
-    <script>
-      // Initialize embedded pharmacy chatbot
-      document.addEventListener("DOMContentLoaded", () => {
-        createPharmacyChatbot({
-          containerId: "pharmacy-chat-embed",
-          isFloating: false,
-        });
-
-        // Also create floating widget
-        createPharmacyChatbot({
-          isFloating: true,
-        });
-      });
-    </script>
-  </body>
+    // Floating widget version
+    new AIChatbot({
+      isFloating: true,
+      name: "Alex's Pharmacy AI",
+      avatar: '💊',
+      greeting: "Hi! 👋 Need a refill, have a question, or looking for our hours? I'm here to help!",
+      responses: {
+        'refill|prescription|rx|fill': "I can help with that! Scroll down to our refill form, or tell me your medication name and I'll guide you through it.",
+        'hours|open|close': "Mon–Fri 9 AM – 6 PM, Saturday 9 AM – 12 PM, Sunday Closed. 🕐",
+        'delivery|deliver': "We offer FREE local delivery in Murray! 🚚",
+        'drive|window': "Yes! We have a drive-up window — no need to leave your car. 🚗",
+        'vaccine|shot|flu|covid': "Walk-in vaccines available — flu, COVID, shingles & more. No appointment needed! 💉",
+        'insurance|plan': "We accept most major insurance plans plus the RxLess discount program.",
+        'phone|call|contact': "Call us at (270) 917-1424 anytime during business hours! 📞",
+        'hello|hi|hey': "Hey! How can Alex's Family Pharmacy help you today? 😊"
+      },
+      fallback: "For the best answer, call us at (270) 917-1424 or visit 801 Paramount Drive. Anything else I can help with?"
+    });
+  });
+</script>
+</body>
 </html>
